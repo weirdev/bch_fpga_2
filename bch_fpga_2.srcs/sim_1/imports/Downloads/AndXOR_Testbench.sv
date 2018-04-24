@@ -12,8 +12,14 @@ module AndXOR_Testbench;
     logic [31:0] read_data;
     logic [31:0] last_read;
     logic resp;
+
+    logic [31:0] last_valid;
+    
+    int fileid, temp;
+    logic [386*8 - 1 : 0] generatormatrix;
    
-    parameter genmatfile = "H:\dev\CSASA\ecc-lib\pyGF\63_45_matrix";
+    //parameter genmatfile = "H:\dev\CSASA\ecc-lib\pyGF\63_45_matrix";
+    // "C:\Users\Wesley\dev\ecc-lib\pyGF\63_45_matrix"
     
     //------------------------------------------------------------------------
     // Simple Clock Generator
@@ -32,10 +38,30 @@ module AndXOR_Testbench;
            AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.M_AXI_GP0.master.IF.PC.fatal_to_warnings=0;
 	 `endif 		
     end
+
+    `define waitForReady \
+        $display("Waiting for InputReady"); \
+         while(inputReady != 1'b1) begin \
+                         #(HalfClk * 2); \
+         end
+    
+    `define waitForOutValid \
+                    $display("Waiting for first point"); \
+        while ( dataOutWrite == 1'b0 ) begin \
+                #(HalfClk * 2); \
+        end
+    
+    `define displayOut \
+           while ( dataOutWrite == 1'b1 ) begin \
+                //assuming we are able to plot to the same point, coords must be positive, and meet WIDTH requirements \
+                assert(Sum == 1) \
+                    else $error( "error"); \
+                #(HalfClk * 2); \
+            end
        
     initial
     begin
-    
+        last_valid = 0;
         $display ("running the tb");
         
         tb_ARESETn = 1'b0;
@@ -50,10 +76,24 @@ module AndXOR_Testbench;
         // Reset signal back to 0
         //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.fpga_soft_reset(32'h0);
 
-       repeat(5) @(posedge tb_ACLK);
+        repeat(5) @(posedge tb_ACLK);
+        
+        //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.pre_load_mem_from_file(genmatfile, 32'h40000000, 386);
+        
+        // Read generator matrix file
+        fileid = $fopen("C:/Users/Wesley/dev/ecc-lib/pyGF/63_45_matrix", "rb");
+        temp = $fread(generatormatrix, fileid);
+        
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000000, 8'h80, generatormatrix[127:0]);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000080, 8'h80, generatormatrix[255:128]);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000100, 8'h80, generatormatrix[383:256]);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000180, 8'h2, generatormatrix[385:384]);
        
-       //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.pre_load_mem_from_file(genmatfile, 32'h40000000, 386);
-       
+        // Write valid to slv_reg3
+        last_valid ^= 1;
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(??, 8'h4, last_valid);
+
+       /*
        // Read the current value of the counter, no change to Counter
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h43C00004,4,read_data,resp);
         // expect something larger than 5
@@ -93,7 +133,7 @@ module AndXOR_Testbench;
               $display("FAILED: expected data to be < %d", last_read);
               $stop;
         end
-
+        */
         $finish;
     end
 
