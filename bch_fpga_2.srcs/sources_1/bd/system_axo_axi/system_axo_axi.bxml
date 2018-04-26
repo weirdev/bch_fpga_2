@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="system_axo_axi" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1524427335"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1524427335"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1524427343"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1524427343"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1524713719"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1524713719"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1524713719"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1524713719"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_axo_axi_processing_system7_0_0\system_axo_axi_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -13,17 +13,6 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="synth\system_axo_axi.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-      </File>
-      <File Name="sim\system_axo_axi.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\system_axo_axi_axi_bram_ctrl_0_0\system_axo_axi_axi_bram_ctrl_0_0.xci" Type="IP">
@@ -58,12 +47,23 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\system_axo_axi_ANDXOR_0_0\system_axo_axi_ANDXOR_0_0.xci" Type="IP">
+      <File Name="ip\system_axo_axi_ANDXOR_0_1\system_axo_axi_ANDXOR_0_1.xci" Type="IP">
         <Instance HierarchyPath="ANDXOR_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth\system_axo_axi.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim\system_axo_axi.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="system_axo_axi.bmm" Type="BMM">

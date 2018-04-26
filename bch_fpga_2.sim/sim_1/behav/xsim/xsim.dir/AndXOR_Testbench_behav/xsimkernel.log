@@ -1,7 +1,7 @@
-Running: xsim.dir/AndXOR_Testbench_behav/xsimk.exe -simmode gui -wdb AndXOR_Testbench_behav.wdb -simrunnum 0 -socket 51900
+Running: xsim.dir/AndXOR_Testbench_behav/xsimk.exe -simmode gui -wdb AndXOR_Testbench_behav.wdb -simrunnum 0 -socket 64520
 Design successfully loaded
-Design Loading Memory Usage: 33136 KB (Peak: 33136 KB)
-Design Loading CPU Usage: 124 ms
+Design Loading Memory Usage: 33324 KB (Peak: 33324 KB)
+Design Loading CPU Usage: 171 ms
 Simulation completed
-Simulation Memory Usage: 51060 KB (Peak: 51060 KB)
-Simulation CPU Usage: 186 ms
+Simulation Memory Usage: 51328 KB (Peak: 51328 KB)
+Simulation CPU Usage: 281 ms

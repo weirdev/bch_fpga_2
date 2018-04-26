@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Apr 25 22:35:27 2018
+# Process ID: 30240
+# Current directory: H:/dev/CSASA/bch_fpga_2/bch_fpga_2.runs/system_axo_axi_axi_bram_ctrl_0_bram_2_synth_1
+# Command line: vivado.exe -log system_axo_axi_axi_bram_ctrl_0_bram_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axo_axi_axi_bram_ctrl_0_bram_2.tcl
+# Log file: H:/dev/CSASA/bch_fpga_2/bch_fpga_2.runs/system_axo_axi_axi_bram_ctrl_0_bram_2_synth_1/system_axo_axi_axi_bram_ctrl_0_bram_2.vds
+# Journal file: H:/dev/CSASA/bch_fpga_2/bch_fpga_2.runs/system_axo_axi_axi_bram_ctrl_0_bram_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_axo_axi_axi_bram_ctrl_0_bram_2.tcl -notrace
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2017.3/data/boards/board_files/zybo-z7-10/board.xml, Invalid xml file C:/Xilinx/Vivado/2017.3/data/boards/board_files/zybo-z7-10/board.xml: equal sign expected
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 355.805 ; gain = 96.090
+INFO: [Synth 8-638] synthesizing module 'system_axo_axi_axi_bram_ctrl_0_bram_2' [h:/dev/CSASA/bch_fpga_2/bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ip/system_axo_axi_axi_bram_ctrl_0_bram_2/synth/system_axo_axi_axi_bram_ctrl_0_bram_2.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'system_axo_axi_axi_bram_ctrl_0_bram_2' (9#1) [h:/dev/CSASA/bch_fpga_2/bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ip/system_axo_axi_axi_bram_ctrl_0_bram_2/synth/system_axo_axi_axi_bram_ctrl_0_bram_2.vhd:80]
+Finished RTL Elaboration : Time (s): cpu = 00:01:25 ; elapsed = 00:01:26 . Memory (MB): peak = 563.477 ; gain = 303.762
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 563.477 ; gain = 303.762
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 639.859 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 639.859 ; gain = 380.145
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 639.859 ; gain = 380.145
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 639.859 ; gain = 380.145
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 639.859 ; gain = 380.145
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 639.859 ; gain = 380.145
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:49 ; elapsed = 00:01:55 . Memory (MB): peak = 671.984 ; gain = 412.270
+Finished Timing Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:55 . Memory (MB): peak = 683.129 ; gain = 423.414
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:55 . Memory (MB): peak = 693.277 ; gain = 433.563
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 693.277 ; gain = 433.563
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 693.277 ; gain = 433.563
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 693.277 ; gain = 433.563
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 693.277 ; gain = 433.563
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 693.277 ; gain = 433.563
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 693.277 ; gain = 433.563
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT2     |     6|
+|2     |LUT4     |     2|
+|3     |RAMB36E1 |     2|
+|4     |SRL16E   |     2|
+|5     |FDRE     |    12|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 693.277 ; gain = 433.563
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:01:57 . Memory (MB): peak = 696.660 ; gain = 445.406

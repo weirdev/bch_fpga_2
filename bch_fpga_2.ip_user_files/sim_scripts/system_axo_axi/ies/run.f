@@ -23,7 +23,6 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system_axo_axi/ip/system_axo_axi_processing_system7_0_0/sim/system_axo_axi_processing_system7_0_0.v" \
-  "../../../bd/system_axo_axi/sim/system_axo_axi.v" \
 -endlib
 -makelib ies_lib/blk_mem_gen_v8_3_6 \
   "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/2751/simulation/blk_mem_gen_v8_3.v" \
@@ -39,7 +38,6 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system_axo_axi/ip/system_axo_axi_axi_bram_ctrl_0_bram_2/sim/system_axo_axi_axi_bram_ctrl_0_bram_2.v" \
-  "../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/sim/bd_470a.v" \
 -endlib
 -makelib ies_lib/smartconnect_v1_0 -sv \
   "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/786b/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
@@ -125,20 +123,22 @@
   "../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/ip/ip_1/sim/bd_470a_psr_aclk_0.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
+  "../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/sim/bd_470a.v" \
   "../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/sim/system_axo_axi_axi_smc_1.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system_axo_axi/ip/system_axo_axi_rst_ps7_0_50M_1/sim/system_axo_axi_rst_ps7_0_50M_1.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/system_axo_axi/ipshared/0d76/hdl/ANDXOR_v1_0_S00_AXI.v" \
+  "../../../bd/system_axo_axi/ipshared/3beb/hdl/ANDXOR_v1_0_S00_AXI.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib -sv \
-  "../../../bd/system_axo_axi/ipshared/0d76/src/andxor.sv" \
+  "../../../bd/system_axo_axi/ipshared/3beb/src/andxor.sv" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/system_axo_axi/ipshared/0d76/hdl/ANDXOR_v1_0.v" \
-  "../../../bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_0/sim/system_axo_axi_ANDXOR_0_0.v" \
+  "../../../bd/system_axo_axi/ipshared/3beb/hdl/ANDXOR_v1_0.v" \
+  "../../../bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_1/sim/system_axo_axi_ANDXOR_0_1.v" \
+  "../../../bd/system_axo_axi/sim/system_axo_axi.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

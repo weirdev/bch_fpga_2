@@ -20,4 +20,7 @@ XilinxAXIVIP: Found at Path: AndXOR_Testbench.zynq_sys.system_axo_axi_i.processi
 XilinxAXIVIP: Found at Path: AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.S_AXI_ACP.slave
 [0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
 running the tb
-[250] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Starting Address(0x43c00004) -> AXI Read -> 4 bytes
+[150] : *ZYNQ_VIP_INFO : FPGA Soft Reset called for 0x1
+[150] : *ZYNQ_VIP_INFO : FPGA Soft Reset called for 0x0
+1
+[250] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Starting Address(0x40000000) -> AXI Write -> 32 bytes

@@ -342,7 +342,7 @@ Compiling package ieee.std_logic_misc
 Compiling module xil_defaultlib.andxor
 Compiling module xil_defaultlib.ANDXOR_v1_0_S00_AXI_default
 Compiling module xil_defaultlib.ANDXOR_v1_0
-Compiling module xil_defaultlib.system_axo_axi_ANDXOR_0_0
+Compiling module xil_defaultlib.system_axo_axi_ANDXOR_0_1
 Compiling architecture implementation of entity axi_bram_ctrl_v4_0_12.sng_port_arb [\sng_port_arb(c_s_axi_addr_width...]
 Compiling architecture implementation of entity axi_bram_ctrl_v4_0_12.wrap_brst [\wrap_brst(c_axi_addr_width=13,c...]
 Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]

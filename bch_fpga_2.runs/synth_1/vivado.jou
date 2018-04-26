@@ -2,11 +2,11 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Feb  8 18:57:51 2018
-# Process ID: 15788
-# Current directory: H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.runs/synth_1
-# Command line: vivado.exe -log System_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source System_wrapper.tcl
-# Log file: H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.runs/synth_1/System_wrapper.vds
-# Journal file: H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.runs/synth_1\vivado.jou
+# Start of session at: Wed Apr 25 22:39:56 2018
+# Process ID: 31680
+# Current directory: H:/dev/CSASA/bch_fpga_2/bch_fpga_2.runs/synth_1
+# Command line: vivado.exe -log system_axo_axi_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axo_axi_wrapper.tcl
+# Log file: H:/dev/CSASA/bch_fpga_2/bch_fpga_2.runs/synth_1/system_axo_axi_wrapper.vds
+# Journal file: H:/dev/CSASA/bch_fpga_2/bch_fpga_2.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source System_wrapper.tcl -notrace
+source system_axo_axi_wrapper.tcl -notrace

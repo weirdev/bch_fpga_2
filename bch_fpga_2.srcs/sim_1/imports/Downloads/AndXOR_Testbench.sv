@@ -11,9 +11,12 @@ module AndXOR_Testbench;
    
     logic [31:0] read_data;
     logic [31:0] last_read;
-    logic resp;
+    logic [31:0] ready;
+    logic [1:0] resp;
 
     logic [31:0] last_valid;
+    
+    logic [63:0] encoded;
     
     int fileid, temp;
     logic [386*8 - 1 : 0] generatormatrix;
@@ -31,6 +34,7 @@ module AndXOR_Testbench;
 	
 	initial 
     begin
+    /*
 	`ifndef XILINX_SIMULATOR
 	       // Cannot find documentation for `fatal_to_warnings`, not in linked pdf
            AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.M_AXI_GP0.master.IF.PC.fatal_to_warnings=1;
@@ -38,27 +42,15 @@ module AndXOR_Testbench;
            AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.M_AXI_GP0.master.IF.PC.fatal_to_warnings=0;
 	 `endif 		
     end
-
+    */
     `define waitForReady \
         $display("Waiting for InputReady"); \
-         while(inputReady != 1'b1) begin \
-                         #(HalfClk * 2); \
-         end
-    
-    `define waitForOutValid \
-                    $display("Waiting for first point"); \
-        while ( dataOutWrite == 1'b0 ) begin \
-                #(HalfClk * 2); \
-        end
-    
-    `define displayOut \
-           while ( dataOutWrite == 1'b1 ) begin \
-                //assuming we are able to plot to the same point, coords must be positive, and meet WIDTH requirements \
-                assert(Sum == 1) \
-                    else $error( "error"); \
-                #(HalfClk * 2); \
-            end
-       
+         while((ready & 1) != 1) begin \
+                        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h43C0000c, 8'h4, ready, resp); \
+                         #10; \
+         end \
+         ready = 0;
+    end
     initial
     begin
         last_valid = 0;
@@ -72,27 +64,46 @@ module AndXOR_Testbench;
         repeat(5) @(posedge tb_ACLK);
           
         // Reset the PL, Counter to 0 (reset signal to 1)
-        //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.fpga_soft_reset(32'h1);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.fpga_soft_reset(32'h1);
         // Reset signal back to 0
-        //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.fpga_soft_reset(32'h0);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.fpga_soft_reset(32'h0);
 
         repeat(5) @(posedge tb_ACLK);
         
         //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.pre_load_mem_from_file(genmatfile, 32'h40000000, 386);
         
         // Read generator matrix file
-        fileid = $fopen("C:/Users/Wesley/dev/ecc-lib/pyGF/63_45_matrix", "rb");
+        fileid = $fopen("H:/dev/CSASA/ecc-lib/pyGF/63_45_matrix_memory", "rb");
         temp = $fread(generatormatrix, fileid);
-        
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000000, 8'h80, generatormatrix[127:0]);
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000080, 8'h80, generatormatrix[255:128]);
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000100, 8'h80, generatormatrix[383:256]);
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000180, 8'h2, generatormatrix[385:384]);
-       
+        $display("1");
+        // Load generator matrix into BRAM (504) total bits
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h4000_0000, 32, 32'h0000_0001, resp);
+        $display(resp);
+        $display("1.5");
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000080, 8'h80, generatormatrix[255:128], resp);
+        $display("2");
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000100, 8'h80, generatormatrix[383:256], resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000180, 8'h78, generatormatrix[503:384], resp);
+        // Load test input (all 1's) into BRAM (only first 45 bits matter)
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001f8, 8'h8, 64'hffff_ffff_ffff_ffff, resp);
+        //`waitForReady
+        // Input IVCW length to AXI = {2 words vector len, 3f=63 bits in codeword}
+        $display("3");
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00004, 8'h4, {16'h2, 16'h3f}, resp);
+        $display("4");
         // Write valid to slv_reg3
         last_valid ^= 1;
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(??, 8'h4, last_valid);
-
+        $display("5");
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C0000c, 8'h4, last_valid, resp);
+        $display("6");
+        // Process and wait for completion
+        `waitForReady
+        $display("7");
+        // Read output
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000200, 8'h8, encoded, resp);
+        $display("8");
+        $display(encoded[8:0] == 8'hff);
+        
        /*
        // Read the current value of the counter, no change to Counter
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h43C00004,4,read_data,resp);

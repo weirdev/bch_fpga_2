@@ -167,6 +167,7 @@ proc create_root_design { parentCell } {
   set axi_bram_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0 ]
   set_property -dict [ list \
    CONFIG.SINGLE_PORT_BRAM {1} \
+   CONFIG.SUPPORTS_NARROW_BURST {0} \
  ] $axi_bram_ctrl_0
 
   # Create instance: axi_bram_ctrl_0_bram, and set properties
