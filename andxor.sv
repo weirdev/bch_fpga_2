@@ -41,8 +41,8 @@ module andxor
      output InputReady
     );
     
-    logic [2:0] state = 0;
-    logic [2:0] nextState;
+    logic [3:0] state = 0;
+    logic [3:0] nextState;
     logic s;
     logic [31:0] addrout;
     
@@ -70,39 +70,41 @@ module andxor
     
     always_ff@(posedge CLK) begin
         if (areset == 1'b1) begin
-            state <= 3'b000;
+            state <= 0;
         end else begin
             case(state)
-                3'b001: begin
-                    bitpos <= 0;
-                    OutputWord <= 0;
+                4'b0000: begin
                     VectorStart <= 0;
                     VectorEnd <= vend;
                     MatrixPosition <= vend;
                     MatrixEnd <= mend;
                     WritePosition <= mend;
                   end
-                3'b010: begin
+                4'b0001: begin
+                    bitpos <= 0;
+                    OutputWord <= 0;
+                  end
+                4'b0010: begin
                     VectorPosition <= VectorStart;
                     s <= 0;
                     addrout <= MatrixPosition;
                     MatrixPosition <= MatrixPosition + 4;
                   end
-                3'b011: begin
+                4'b0100: begin
                     MatrixWord <= ReadData;
                     addrout <= VectorPosition;
                     VectorPosition <= VectorPosition + 4;
                   end
-                3'b100: begin
+                4'b0110: begin
                     s <= s ^ orsum;
                     addrout <= MatrixPosition;
                     MatrixPosition <= MatrixPosition + 4;
                   end
-                3'b101: begin
+                4'b1000: begin
                     OutputWord[bitpos] <= s;
                     bitpos <= bitpos + 1;
                   end
-                3'b110: begin
+                4'b1001: begin
                     addrout <= WritePosition;
                     WritePosition <= WritePosition + 4;
                   end
@@ -112,33 +114,37 @@ module andxor
     end
     
     // Output logic
-    assign DataOutWrite = (state == 3'b110) ? 1'b1 : 1'b0;
-    assign InputReady = (state == 2'b00) ? 1'b1 : 1'b0;
+    assign DataOutWrite = (state == 4'b1010) ? 1'b1 : 1'b0;
+    assign InputReady = (state == 0) ? 1'b1 : 1'b0;
     assign DataOut = OutputWord;
     assign AddressOut = addrout;
     
     // Next state logic
     always_comb begin
         case(state)
-            3'b000: 
-                if (InputValid == 1'b1) nextState = 3'b001;
-                else nextState = 3'b000;
-            3'b001: begin
-                vend = IVLength * 4;
-                mend = vend + (vend * CWLength);
-                nextState = 3'b010;
-              end
-            3'b010: nextState = 3'b011;
-            3'b011: nextState = 3'b100;
-            3'b100:
-                if (VectorPosition < VectorEnd) nextState = 3'b011;
-                else nextState = 3'b101;
-            3'b101:
-                if ((bitpos <= 32) && (MatrixPosition < MatrixEnd)) nextState = 3'b010;
-                else nextState = 3'b110;
-            3'b110:
-                if (MatrixPosition < MatrixEnd) nextState = 3'b001;
-                else nextState = 3'b000;            
+            4'b0000: 
+                begin
+                    vend = IVLength * 4;
+                    mend = vend + (vend * CWLength);
+                    if (InputValid == 1'b1) nextState = 4'b0001;
+                    else nextState = 4'b0000;
+                end
+            4'b0001: nextState = 4'b0010;
+            4'b0010: nextState = 4'b0011;
+            4'b0011: nextState = 4'b0100; // Skip cycle for addrout
+            4'b0100: nextState = 4'b0101;
+            4'b0101: nextState = 4'b0110; // Skip cycle for addrout
+            4'b0110:
+                if (VectorPosition < VectorEnd) nextState = 4'b0111;
+                else nextState = 4'b1000;
+            4'b0111: nextState = 4'b0100; // Skip cycle for addrout
+            4'b1000:
+                if ((bitpos <= 32) && (MatrixPosition < MatrixEnd)) nextState = 4'b0010;
+                else nextState = 4'b1001;
+            4'b1001:
+                if (MatrixPosition < MatrixEnd) nextState = 4'b0001;
+                else nextState = 4'b1010;
+            4'b1010: nextState = 4'b0000; // Skip cycle for addrout
         endcase
     end
     

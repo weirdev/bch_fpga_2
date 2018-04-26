@@ -1,8 +1,8 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
--- Date        : Thu Apr 26 11:57:46 2018
--- Host        : CS-S112 running 64-bit major release  (build 9200)
+-- Date        : Thu Apr 26 15:21:02 2018
+-- Host        : CS-S129 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               H:/dev/CSASA/bch_fpga_2/bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_0/system_axo_axi_ANDXOR_0_0_stub.vhdl
 -- Design      : system_axo_axi_ANDXOR_0_0

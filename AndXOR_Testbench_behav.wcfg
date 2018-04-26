@@ -16,15 +16,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="86244880600fs"></ZoomStartTime>
-      <ZoomEndTime time="86343339335fs"></ZoomEndTime>
-      <Cursor1Time time="86294110000fs"></Cursor1Time>
+      <ZoomStartTime time="92774941060fs"></ZoomStartTime>
+      <ZoomEndTime time="92888561221fs"></ZoomEndTime>
+      <Cursor1Time time="92580165000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="109"></NameColumnWidth>
-      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+      <NameColumnWidth column_width="150"></NameColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="26" />
+   <WVObjectSize size="28" />
    <wvobject fp_name="/AndXOR_Testbench/tb_ACLK" type="logic">
       <obj_property name="ElementShortName">tb_ACLK</obj_property>
       <obj_property name="ObjectShortName">tb_ACLK</obj_property>
@@ -86,12 +86,12 @@
       <obj_property name="ObjectShortName">i[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/state" type="array">
-      <obj_property name="ElementShortName">state[2:0]</obj_property>
-      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/nextState" type="array">
-      <obj_property name="ElementShortName">nextState[2:0]</obj_property>
-      <obj_property name="ObjectShortName">nextState[2:0]</obj_property>
+      <obj_property name="ElementShortName">nextState[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nextState[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/InputValid" type="logic">
       <obj_property name="ElementShortName">InputValid</obj_property>
@@ -128,5 +128,13 @@
    <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/MatrixPosition" type="array">
       <obj_property name="ElementShortName">MatrixPosition[31:0]</obj_property>
       <obj_property name="ObjectShortName">MatrixPosition[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/addrout" type="array">
+      <obj_property name="ElementShortName">addrout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addrout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/DataOutWrite" type="logic">
+      <obj_property name="ElementShortName">DataOutWrite</obj_property>
+      <obj_property name="ObjectShortName">DataOutWrite</obj_property>
    </wvobject>
 </wave_config>

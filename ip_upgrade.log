@@ -1,6 +1,48 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Thu Apr 26 15:19:13 2018
+| Host         : CS-S129 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axo_axi_ANDXOR_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axo_axi_ANDXOR_0_0 (uiowa.edu:user:ANDXOR:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Thu Apr 26 14:58:37 2018
+| Host         : CS-S129 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axo_axi_ANDXOR_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axo_axi_ANDXOR_0_0 (uiowa.edu:user:ANDXOR:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
 | Date         : Thu Apr 26 11:55:57 2018
 | Host         : CS-S112 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

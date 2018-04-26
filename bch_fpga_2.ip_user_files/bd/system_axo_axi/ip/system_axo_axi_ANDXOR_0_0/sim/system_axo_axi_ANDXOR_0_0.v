@@ -48,7 +48,7 @@
 
 
 // IP VLNV: uiowa.edu:user:ANDXOR:1.0
-// IP Revision: 9
+// IP Revision: 11
 
 `timescale 1ns/1ps
 

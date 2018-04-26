@@ -20,7 +20,7 @@ module AndXOR_Testbench;
     logic [31:0] encoded1;
     
     int fileid, temp;
-    logic [386*8 - 1 : 0] generatormatrix;
+    logic [504*8 - 1 : 0] generatormatrix;
     
     int i;
    
@@ -83,6 +83,7 @@ module AndXOR_Testbench;
         // Load generator matrix into BRAM (504) total bytes
         for (i=0; i<504; i=i+4) begin
             AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h4000_0000+i, 4, generatormatrix[i*8+:32], resp);
+            #10;
             $display(i);
         end
         $display("done genmat");

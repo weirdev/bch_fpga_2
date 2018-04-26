@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sim/sim_1/behav/xsim/xsim.dir/AndXOR_Testbench_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Thu Apr 26 12:09:03 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Thu Apr 26 16:04:35 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.3 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2018833" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -12,9 +12,9 @@ webtalk_add_data -client project -key target_family -value "not_applicable" -con
 webtalk_add_data -client project -key target_device -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "06865347-1704-484d-bd40-e9886a1cc030" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "5851079d-d8a3-4e23-b7be-d42b5ef01aba" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "7a602b316f1b4cada0cae97722f4a5c8" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "36" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "46" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz" -context "user_environment"
@@ -23,13 +23,11 @@ webtalk_add_data -client project -key total_processors -value "1" -context "user
 webtalk_add_data -client project -key system_ram -value "34.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
-webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
-webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "93010 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "96310 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "11.80_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "128820_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 354342009 -regid "" -xml H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sim/sim_1/behav/xsim/xsim.dir/AndXOR_Testbench_behav/webtalk/usage_statistics_ext_xsim.xml -html H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sim/sim_1/behav/xsim/xsim.dir/AndXOR_Testbench_behav/webtalk/usage_statistics_ext_xsim.html -wdm H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sim/sim_1/behav/xsim/xsim.dir/AndXOR_Testbench_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "4.00_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "80588_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3660782097 -regid "" -xml H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sim/sim_1/behav/xsim/xsim.dir/AndXOR_Testbench_behav/webtalk/usage_statistics_ext_xsim.xml -html H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sim/sim_1/behav/xsim/xsim.dir/AndXOR_Testbench_behav/webtalk/usage_statistics_ext_xsim.html -wdm H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sim/sim_1/behav/xsim/xsim.dir/AndXOR_Testbench_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
