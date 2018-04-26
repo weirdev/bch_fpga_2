@@ -16,6 +16,7 @@ sv processing_system7_vip_v1_0_2 --include "../../../../bch_fpga_2.srcs/sources_
 verilog xil_defaultlib --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" \
 "../../../bd/system_axo_axi/ip/system_axo_axi_processing_system7_0_0/sim/system_axo_axi_processing_system7_0_0.v" \
 "../../../bd/system_axo_axi/ip/system_axo_axi_axi_bram_ctrl_0_bram_2/sim/system_axo_axi_axi_bram_ctrl_0_bram_2.v" \
+"../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/sim/bd_470a.v" \
 
 sv smartconnect_v1_0 --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" \
 "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/786b/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
@@ -90,17 +91,16 @@ verilog xlconstant_v1_1_3 --include "../../../../bch_fpga_2.srcs/sources_1/bd/sy
 
 verilog xil_defaultlib --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" \
 "../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/ip/ip_0/sim/bd_470a_one_0.v" \
-"../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/sim/bd_470a.v" \
 "../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/sim/system_axo_axi_axi_smc_1.v" \
-"../../../bd/system_axo_axi/ipshared/3beb/hdl/ANDXOR_v1_0_S00_AXI.v" \
+"../../../bd/system_axo_axi/sim/system_axo_axi.v" \
+"../../../bd/system_axo_axi/ipshared/6c39/hdl/ANDXOR_v1_0_S00_AXI.v" \
 
 sv xil_defaultlib --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" \
-"../../../bd/system_axo_axi/ipshared/3beb/src/andxor.sv" \
+"../../../bd/system_axo_axi/ipshared/6c39/src/andxor.sv" \
 
 verilog xil_defaultlib --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" --include "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" \
-"../../../bd/system_axo_axi/ipshared/3beb/hdl/ANDXOR_v1_0.v" \
-"../../../bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_1/sim/system_axo_axi_ANDXOR_0_1.v" \
-"../../../bd/system_axo_axi/sim/system_axo_axi.v" \
+"../../../bd/system_axo_axi/ipshared/6c39/hdl/ANDXOR_v1_0.v" \
+"../../../bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_0/sim/system_axo_axi_ANDXOR_0_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 

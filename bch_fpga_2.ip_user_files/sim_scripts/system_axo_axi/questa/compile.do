@@ -69,6 +69,7 @@ vlog -work blk_mem_gen_v8_4_0 -64 "+incdir+../../../../bch_fpga_2.srcs/sources_1
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" \
 "../../../bd/system_axo_axi/ip/system_axo_axi_axi_bram_ctrl_0_bram_2/sim/system_axo_axi_axi_bram_ctrl_0_bram_2.v" \
+"../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/sim/bd_470a.v" \
 
 vlog -work smartconnect_v1_0 -64 -sv -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_0 -L axi_vip_v1_1_0 -L processing_system7_vip_v1_0_2 -L xil_defaultlib -L xilinx_vip "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" \
 "../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/786b/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
@@ -154,22 +155,21 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/ip/ip_1/sim/bd_470a_psr_aclk_0.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" \
-"../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/sim/bd_470a.v" \
 "../../../bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/sim/system_axo_axi_axi_smc_1.v" \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/system_axo_axi/ip/system_axo_axi_rst_ps7_0_50M_1/sim/system_axo_axi_rst_ps7_0_50M_1.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" \
-"../../../bd/system_axo_axi/ipshared/3beb/hdl/ANDXOR_v1_0_S00_AXI.v" \
+"../../../bd/system_axo_axi/sim/system_axo_axi.v" \
+"../../../bd/system_axo_axi/ipshared/6c39/hdl/ANDXOR_v1_0_S00_AXI.v" \
 
 vlog -work xil_defaultlib -64 -sv -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_0 -L axi_vip_v1_1_0 -L processing_system7_vip_v1_0_2 -L xil_defaultlib -L xilinx_vip "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" \
-"../../../bd/system_axo_axi/ipshared/3beb/src/andxor.sv" \
+"../../../bd/system_axo_axi/ipshared/6c39/src/andxor.sv" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/ec67/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/d5d3/hdl/verilog" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/e0a2/hdl" "+incdir+../../../../bch_fpga_2.srcs/sources_1/bd/system_axo_axi/ipshared/571c/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" \
-"../../../bd/system_axo_axi/ipshared/3beb/hdl/ANDXOR_v1_0.v" \
-"../../../bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_1/sim/system_axo_axi_ANDXOR_0_1.v" \
-"../../../bd/system_axo_axi/sim/system_axo_axi.v" \
+"../../../bd/system_axo_axi/ipshared/6c39/hdl/ANDXOR_v1_0.v" \
+"../../../bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_0/sim/system_axo_axi_ANDXOR_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

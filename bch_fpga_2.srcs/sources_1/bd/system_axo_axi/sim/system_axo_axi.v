@@ -1,15 +1,15 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-//Date        : Wed Apr 25 22:34:50 2018
-//Host        : CS-S113 running 64-bit major release  (build 9200)
+//Date        : Thu Apr 26 11:56:41 2018
+//Host        : CS-S112 running 64-bit major release  (build 9200)
 //Command     : generate_target system_axo_axi.bd
 //Design      : system_axo_axi
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "system_axo_axi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system_axo_axi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_bram_cntlr_cnt=10,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_axo_axi.hwdef" *) 
+(* CORE_GENERATION_INFO = "system_axo_axi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system_axo_axi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_bram_cntlr_cnt=11,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_axo_axi.hwdef" *) 
 module system_axo_axi
    (DDR_addr,
     DDR_ba,
@@ -181,7 +181,7 @@ module system_axo_axi
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
 
-  system_axo_axi_ANDXOR_0_1 ANDXOR_0
+  system_axo_axi_ANDXOR_0_0 ANDXOR_0
        (.AddressOut(ANDXOR_0_BRAM_IFACE_ADDR),
         .BRAM_CLK(ANDXOR_0_BRAM_IFACE_CLK),
         .BRAM_EN(ANDXOR_0_BRAM_IFACE_EN),

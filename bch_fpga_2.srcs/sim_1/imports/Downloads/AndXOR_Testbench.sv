@@ -76,8 +76,8 @@ module AndXOR_Testbench;
         //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.pre_load_mem_from_file(genmatfile, 32'h40000000, 386);
         
         // Read generator matrix file
-        //fileid = $fopen("H:/dev/CSASA/ecc-lib/pyGF/63_45_matrix_memory", "rb");
-        fileid = $fopen("C:/Users/Wesley/dev/ecc-lib/pyGF/63_45_matrix_memory", "rb");
+        fileid = $fopen("H:/dev/CSASA/ecc-lib/pyGF/63_45_matrix_memory", "rb");
+        //fileid = $fopen("C:/Users/Wesley/dev/ecc-lib/pyGF/63_45_matrix_memory", "rb");
         temp = $fread(generatormatrix, fileid);
         $display("1");
         // Load generator matrix into BRAM (504) total bytes
@@ -92,19 +92,21 @@ module AndXOR_Testbench;
         `waitForReady
         // Input IVCW length to AXI = {2 words vector len, 3f=63 bits in codeword}
         $display("3b");
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00004, 8'h4, {16'h2, 16'h3f}, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00004, 8'h4, 2, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00008, 8'h4, 63, resp);
         $display("4");
         // Write valid to slv_reg3
         last_valid ^= 1;
         $display("5");
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C0000c, 8'h4, last_valid, resp);
+        #100
         $display("6");
         // Process and wait for completion
         `waitForReady
         $display("7");
         // Read output
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000200, 8'h4, encoded0, resp);
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000204, 8'h4, encoded1, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000200, 4, encoded0, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000204, 4, encoded1, resp);
         $display("8");
         $display(encoded0[8:0]);
         

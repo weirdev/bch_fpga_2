@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AndXOR_Testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AndXOR_Testbench" />
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="axi_vip_pkg" />
+            <top_module name="glbl" />
+            <top_module name="std" />
+            <top_module name="vcomponents" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="86244880600fs"></ZoomStartTime>
+      <ZoomEndTime time="86343339335fs"></ZoomEndTime>
+      <Cursor1Time time="86294110000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="109"></NameColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/AndXOR_Testbench/tb_ACLK" type="logic">
+      <obj_property name="ElementShortName">tb_ACLK</obj_property>
+      <obj_property name="ObjectShortName">tb_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/tb_ARESETn" type="logic">
+      <obj_property name="ElementShortName">tb_ARESETn</obj_property>
+      <obj_property name="ObjectShortName">tb_ARESETn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/temp_clk" type="logic">
+      <obj_property name="ElementShortName">temp_clk</obj_property>
+      <obj_property name="ObjectShortName">temp_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/temp_rstn" type="logic">
+      <obj_property name="ElementShortName">temp_rstn</obj_property>
+      <obj_property name="ObjectShortName">temp_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/read_data" type="array">
+      <obj_property name="ElementShortName">read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/last_read" type="array">
+      <obj_property name="ElementShortName">last_read[31:0]</obj_property>
+      <obj_property name="ObjectShortName">last_read[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/ready" type="array">
+      <obj_property name="ElementShortName">ready[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ready[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/resp" type="array">
+      <obj_property name="ElementShortName">resp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">resp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/last_valid" type="array">
+      <obj_property name="ElementShortName">last_valid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">last_valid[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/encoded0" type="array">
+      <obj_property name="ElementShortName">encoded0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">encoded0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/encoded1" type="array">
+      <obj_property name="ElementShortName">encoded1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">encoded1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/fileid" type="array">
+      <obj_property name="ElementShortName">fileid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fileid[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/temp" type="array">
+      <obj_property name="ElementShortName">temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/generatormatrix" type="array">
+      <obj_property name="ElementShortName">generatormatrix[3087:0]</obj_property>
+      <obj_property name="ObjectShortName">generatormatrix[3087:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/nextState" type="array">
+      <obj_property name="ElementShortName">nextState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nextState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/InputValid" type="logic">
+      <obj_property name="ElementShortName">InputValid</obj_property>
+      <obj_property name="ObjectShortName">InputValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/InputReady" type="logic">
+      <obj_property name="ElementShortName">InputReady</obj_property>
+      <obj_property name="ObjectShortName">InputReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/bitpos" type="array">
+      <obj_property name="ElementShortName">bitpos[4:0]</obj_property>
+      <obj_property name="ObjectShortName">bitpos[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/OutputWord" type="array">
+      <obj_property name="ElementShortName">OutputWord[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OutputWord[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/MatrixWord" type="array">
+      <obj_property name="ElementShortName">MatrixWord[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MatrixWord[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/AddressOut" type="array">
+      <obj_property name="ElementShortName">AddressOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AddressOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/s" type="logic">
+      <obj_property name="ElementShortName">s</obj_property>
+      <obj_property name="ObjectShortName">s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AndXOR_Testbench/zynq_sys/system_axo_axi_i/ANDXOR_0/inst/ANDXOR_v1_0_S00_AXI_inst/dut/MatrixPosition" type="array">
+      <obj_property name="ElementShortName">MatrixPosition[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MatrixPosition[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -19,7 +19,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axo_axi_
 # IP: bd/system_axo_axi/ip/system_axo_axi_rst_ps7_0_50M_1/system_axo_axi_rst_ps7_0_50M_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axo_axi_rst_ps7_0_50M_1 || ORIG_REF_NAME==system_axo_axi_rst_ps7_0_50M_1} -quiet] -quiet
 
-# IP: bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_1/system_axo_axi_ANDXOR_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axo_axi_ANDXOR_0_1 || ORIG_REF_NAME==system_axo_axi_ANDXOR_0_1} -quiet] -quiet
+# IP: bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_0/system_axo_axi_ANDXOR_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axo_axi_ANDXOR_0_0 || ORIG_REF_NAME==system_axo_axi_ANDXOR_0_0} -quiet] -quiet
 
 # XDC: bd/system_axo_axi/system_axo_axi_ooc.xdc
