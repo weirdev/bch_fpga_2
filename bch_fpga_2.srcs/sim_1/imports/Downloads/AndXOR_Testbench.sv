@@ -16,10 +16,13 @@ module AndXOR_Testbench;
 
     logic [31:0] last_valid;
     
-    logic [63:0] encoded;
+    logic [31:0] encoded0;
+    logic [31:0] encoded1;
     
     int fileid, temp;
     logic [386*8 - 1 : 0] generatormatrix;
+    
+    int i;
    
     //parameter genmatfile = "H:\dev\CSASA\ecc-lib\pyGF\63_45_matrix";
     // "C:\Users\Wesley\dev\ecc-lib\pyGF\63_45_matrix"
@@ -73,22 +76,22 @@ module AndXOR_Testbench;
         //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.pre_load_mem_from_file(genmatfile, 32'h40000000, 386);
         
         // Read generator matrix file
-        fileid = $fopen("H:/dev/CSASA/ecc-lib/pyGF/63_45_matrix_memory", "rb");
+        //fileid = $fopen("H:/dev/CSASA/ecc-lib/pyGF/63_45_matrix_memory", "rb");
+        fileid = $fopen("C:/Users/Wesley/dev/ecc-lib/pyGF/63_45_matrix_memory", "rb");
         temp = $fread(generatormatrix, fileid);
         $display("1");
-        // Load generator matrix into BRAM (504) total bits
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h4000_0000, 32, 32'h0000_0001, resp);
-        $display(resp);
-        $display("1.5");
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000080, 8'h80, generatormatrix[255:128], resp);
-        $display("2");
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000100, 8'h80, generatormatrix[383:256], resp);
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h40000180, 8'h78, generatormatrix[503:384], resp);
-        // Load test input (all 1's) into BRAM (only first 45 bits matter)
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001f8, 8'h8, 64'hffff_ffff_ffff_ffff, resp);
-        //`waitForReady
+        // Load generator matrix into BRAM (504) total bytes
+        for (i=0; i<504; i=i+4) begin
+            AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h4000_0000+i, 4, generatormatrix[i*8+:32], resp);
+            $display(i);
+        end
+        $display("done genmat");
+        // Load test input (all 1's) into BRAM (2 words, only first 45 bits matter)
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001f8, 4, 32'hffff_ffff, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001fc, 4, 32'hffff_ffff, resp);
+        `waitForReady
         // Input IVCW length to AXI = {2 words vector len, 3f=63 bits in codeword}
-        $display("3");
+        $display("3b");
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00004, 8'h4, {16'h2, 16'h3f}, resp);
         $display("4");
         // Write valid to slv_reg3
@@ -100,9 +103,10 @@ module AndXOR_Testbench;
         `waitForReady
         $display("7");
         // Read output
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000200, 8'h8, encoded, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000200, 8'h4, encoded0, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000204, 8'h4, encoded1, resp);
         $display("8");
-        $display(encoded[8:0] == 8'hff);
+        $display(encoded0[8:0]);
         
        /*
        // Read the current value of the counter, no change to Counter
