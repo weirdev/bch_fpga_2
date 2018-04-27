@@ -749,11 +749,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Apr 26 20:20:11 UTC 2018</spirit:value>
+            <spirit:value>Thu Apr 26 23:58:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f525c03b</spirit:value>
+            <spirit:value>7:7738fa31</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -768,11 +768,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Apr 26 20:20:11 UTC 2018</spirit:value>
+            <spirit:value>Thu Apr 26 23:58:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f525c03b</spirit:value>
+            <spirit:value>7:7738fa31</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -787,11 +787,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Apr 26 20:20:11 UTC 2018</spirit:value>
+            <spirit:value>Thu Apr 26 23:58:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:b8fdf94b</spirit:value>
+            <spirit:value>7:88f5b99b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -806,11 +806,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Apr 26 20:20:11 UTC 2018</spirit:value>
+            <spirit:value>Thu Apr 26 23:58:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:b8fdf94b</spirit:value>
+            <spirit:value>7:88f5b99b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -824,11 +824,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Apr 26 20:21:02 UTC 2018</spirit:value>
+            <spirit:value>Thu Apr 26 23:58:54 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f525c03b</spirit:value>
+            <spirit:value>7:7738fa31</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1277,15 +1277,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/8be7/hdl/ANDXOR_v1_0_S00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/f4ed/hdl/ANDXOR_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8be7/src/andxor.sv</spirit:name>
+        <spirit:name>../../ipshared/f4ed/src/andxor.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8be7/hdl/ANDXOR_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/f4ed/hdl/ANDXOR_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1300,15 +1300,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/8be7/hdl/ANDXOR_v1_0_S00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/f4ed/hdl/ANDXOR_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8be7/src/andxor.sv</spirit:name>
+        <spirit:name>../../ipshared/f4ed/src/andxor.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/8be7/hdl/ANDXOR_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/f4ed/hdl/ANDXOR_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1417,7 +1417,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>ANDXOR_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>11</xilinx:coreRevision>
+      <xilinx:coreRevision>16</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="uiowa.edu:user:ANDXOR:1.0_ARCHIVE_LOCATION">h:/dev/CSASA/ip/ANDXOR_1.0</xilinx:tag>
       </xilinx:tags>
@@ -1456,7 +1456,7 @@
       <xilinx:xilinxVersion>2017.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="52a85e21"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b6ec0ff4"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7d628f3e"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="615f81db"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="89458bfd"/>

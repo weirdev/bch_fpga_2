@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -83,4 +84,4 @@ synth_design -top system_axo_axi_wrapper -part xc7z010clg400-1
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
 write_checkpoint -force -noxdef system_axo_axi_wrapper.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file system_axo_axi_wrapper_utilization_synth.rpt -pb System_wrapper_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file system_axo_axi_wrapper_utilization_synth.rpt -pb system_axo_axi_wrapper_utilization_synth.pb"

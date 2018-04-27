@@ -131,13 +131,13 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system_axo_axi/sim/system_axo_axi.v" \
-  "../../../bd/system_axo_axi/ipshared/8be7/hdl/ANDXOR_v1_0_S00_AXI.v" \
+  "../../../bd/system_axo_axi/ipshared/f4ed/hdl/ANDXOR_v1_0_S00_AXI.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib -sv \
-  "../../../bd/system_axo_axi/ipshared/8be7/src/andxor.sv" \
+  "../../../bd/system_axo_axi/ipshared/f4ed/src/andxor.sv" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/system_axo_axi/ipshared/8be7/hdl/ANDXOR_v1_0.v" \
+  "../../../bd/system_axo_axi/ipshared/f4ed/hdl/ANDXOR_v1_0.v" \
   "../../../bd/system_axo_axi/ip/system_axo_axi_ANDXOR_0_0/sim/system_axo_axi_ANDXOR_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

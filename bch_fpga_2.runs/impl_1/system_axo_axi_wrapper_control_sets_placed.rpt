@@ -1,0 +1,42 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Thu Apr 26 19:16:45 2018
+| Host         : CS-S129 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -file system_axo_axi_wrapper_control_sets_placed.rpt
+| Design       : system_axo_axi_wrapper
+| Device       : xc7z010
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+
+1. Summary
+----------
+
++-------------------------------+-------+
+|             Status            | Count |
++-------------------------------+-------+
+| Number of unique control sets |   303 |
++-------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             642 |          203 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             445 |          223 |
+| Yes          | No                    | No                     |            2084 |          620 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1225 |          411 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+

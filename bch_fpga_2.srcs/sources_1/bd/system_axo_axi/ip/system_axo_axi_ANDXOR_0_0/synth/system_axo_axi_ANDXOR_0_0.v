@@ -48,7 +48,7 @@
 
 
 // IP VLNV: uiowa.edu:user:ANDXOR:1.0
-// IP Revision: 11
+// IP Revision: 16
 
 (* X_CORE_INFO = "ANDXOR_v1_0,Vivado 2017.3" *)
 (* CHECK_LICENSE_TYPE = "system_axo_axi_ANDXOR_0_0,ANDXOR_v1_0,{}" *)

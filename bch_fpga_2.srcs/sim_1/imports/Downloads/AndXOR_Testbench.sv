@@ -107,9 +107,11 @@ module AndXOR_Testbench;
         $display("7");
         // Read output
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000200, 4, encoded0, resp);
+        
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000204, 4, encoded1, resp);
+        #20;
         $display("8");
-        $display(encoded0[8:0]);
+        $display(encoded0 == 32'hffff_ffff);
         
        /*
        // Read the current value of the counter, no change to Counter

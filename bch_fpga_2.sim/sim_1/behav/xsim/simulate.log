@@ -444,11 +444,9 @@ Waiting for InputReady
 [94450] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Done AXI Read for Starting Address(0x43c0000c) with Response 'OKAY'
 [94460] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Starting Address(0x43c0000c) -> AXI Read -> 4 bytes
 [95110] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Done AXI Read for Starting Address(0x43c0000c) with Response 'OKAY'
-7
-[95120] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Starting Address(0x40000200) -> AXI Read -> 4 bytes
-[95710] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Done AXI Read for Starting Address(0x40000200) with Response 'OKAY'
-[95710] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Starting Address(0x40000204) -> AXI Read -> 4 bytes
-[96310] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Done AXI Read for Starting Address(0x40000204) with Response 'OKAY'
-8
-243
-$finish called at time : 96310 ns : File "H:/dev/CSASA/bch_fpga_2/bch_fpga_2.srcs/sim_1/imports/Downloads/AndXOR_Testbench.sv" Line 155
+[95120] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Starting Address(0x43c0000c) -> AXI Read -> 4 bytes
+[95770] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Done AXI Read for Starting Address(0x43c0000c) with Response 'OKAY'
+[95780] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Starting Address(0x43c0000c) -> AXI Read -> 4 bytes
+[96430] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Done AXI Read for Starting Address(0x43c0000c) with Response 'OKAY'
+[96440] : M_AXI_GP0 : *ZYNQ_VIP_INFO : Starting Address(0x43c0000c) -> AXI Read -> 4 bytes
+[97090] : M_AXI_GP0 : *Z
