@@ -1,4 +1,4 @@
-19:37:39 **** Auto Build of configuration Debug for project bch_accel ****
+20:37:14 **** Auto Build of configuration Debug for project bch_accel ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -12,57 +12,6 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=co
 ../src/ecclib.cpp:45:13: warning: statement has no effect [-Wunused-value]
      newword << 8;
      ~~~~~~~~^~~~
-In file included from H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xuartps.h:187:0,
-                 from ../src/ecclib.h:15,
-                 from ../src/ecclib.cpp:1:
-H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
- #define XST_FAILURE                     1L
-                                         ^
-../src/ecclib.cpp:88:11: note: in expansion of macro 'XST_FAILURE'
-    return XST_FAILURE;
-           ^~~~~~~~~~~
-H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
- #define XST_FAILURE                     1L
-                                         ^
-../src/ecclib.cpp:93:11: note: in expansion of macro 'XST_FAILURE'
-    return XST_FAILURE;
-           ^~~~~~~~~~~
-H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
- #define XST_FAILURE                     1L
-                                         ^
-../src/ecclib.cpp:102:11: note: in expansion of macro 'XST_FAILURE'
-    return XST_FAILURE;
-           ^~~~~~~~~~~
-H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
- #define XST_FAILURE                     1L
-                                         ^
-../src/ecclib.cpp:110:11: note: in expansion of macro 'XST_FAILURE'
-    return XST_FAILURE;
-           ^~~~~~~~~~~
-H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
- #define XST_FAILURE                     1L
-                                         ^
-../src/ecclib.cpp:117:11: note: in expansion of macro 'XST_FAILURE'
-    return XST_FAILURE;
-           ^~~~~~~~~~~
-H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
- #define XST_FAILURE                     1L
-                                         ^
-../src/ecclib.cpp:138:11: note: in expansion of macro 'XST_FAILURE'
-    return XST_FAILURE;
-           ^~~~~~~~~~~
-H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
- #define XST_FAILURE                     1L
-                                         ^
-../src/ecclib.cpp:145:11: note: in expansion of macro 'XST_FAILURE'
-    return XST_FAILURE;
-           ^~~~~~~~~~~
-H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
- #define XST_FAILURE                     1L
-                                         ^
-../src/ecclib.cpp:152:11: note: in expansion of macro 'XST_FAILURE'
-    return XST_FAILURE;
-           ^~~~~~~~~~~
 ../src/ecclib.cpp:50:6: warning: unused variable 'select' [-Wunused-variable]
    u8 select;
       ^~~~~~
@@ -72,41 +21,22 @@ H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_desig
 ../src/ecclib.cpp:53:7: warning: unused variable 'dma_improvement' [-Wunused-variable]
    int dma_improvement;
        ^~~~~~~~~~~~~~~
-../src/ecclib.cpp:56:7: warning: unused variable 'software_cycles' [-Wunused-variable]
-   int software_cycles, interrupt_cycles;
-       ^~~~~~~~~~~~~~~
-../src/ecclib.cpp:56:24: warning: unused variable 'interrupt_cycles' [-Wunused-variable]
-   int software_cycles, interrupt_cycles;
-                        ^~~~~~~~~~~~~~~~
-../src/ecclib.cpp:79:16: warning: unused variable 'Channel' [-Wunused-variable]
-   unsigned int Channel = 0;
-                ^~~~~~~
 ../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
-../src/ecclib.cpp:258:26: error: invalid type argument of unary '*' (have 'unsigned int')
-    *(BRAM_TOENCODE_ADDR+i) = 0xffff_ffff;
-                          ^
-../src/ecclib.cpp:258:30: error: unable to find numeric literal operator 'operator""_ffff'
-    *(BRAM_TOENCODE_ADDR+i) = 0xffff_ffff;
-                              ^~~~~~~~~~~
-../src/ecclib.cpp:261:35: error: invalid type argument of unary '*' (have 'unsigned int')
-   while (*(ANDXOR_AXI_BASEADDR + 3)&1 != 1) {}
-                                   ^
-../src/ecclib.cpp:268:26: error: invalid type argument of unary '*' (have 'unsigned int')
-   *(ANDXOR_AXI_BASEADDR+1) = ivcwlen;
-                          ^
-../src/ecclib.cpp:271:26: error: invalid type argument of unary '*' (have 'unsigned int')
-   *(ANDXOR_AXI_BASEADDR+3) = 1;
-                          ^
-../src/ecclib.cpp:273:35: error: invalid type argument of unary '*' (have 'unsigned int')
-   while (*(ANDXOR_AXI_BASEADDR + 3)&1 != 1) {}
-                                   ^
-../src/ecclib.cpp:276:43: error: invalid type argument of unary '*' (have 'unsigned int')
-    encodedwords[i] = *(BRAM_ENCODED_ADDR+i);
-                                           ^
-../src/ecclib.cpp:278:10: error: invalid conversion from 'char*' to 'unsigned char*' [-fpermissive]
-   return (char*)encodedwords;
-          ^~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:260:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp:272:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp: In member function 'void EccLib::BCH::DmaDoneHandler(unsigned int, XDmaPs_Cmd*, void*)':
+../src/ecclib.cpp:324:5: error: 'Done' was not declared in this scope
+     Done = 1;
+     ^~~~
+../src/ecclib.cpp: In member function 'void EccLib::BCH::DmaFaultHandler(unsigned int, XDmaPs_Cmd*, void*)':
+../src/ecclib.cpp:333:3: error: 'Error' was not declared in this scope
+   Error = 1;
+   ^~~~~
 make: *** [src/ecclib.o] Error 1
 
-19:37:40 Build Finished (took 955ms)
+20:37:15 Build Finished (took 1s.57ms)
 

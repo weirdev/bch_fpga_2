@@ -2759,3 +2759,52 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 
 !ENTRY org.eclipse.cdt.core 1 0 2018-04-26 19:22:36.448
 !MESSAGE Indexed 'bch_accel' (1 sources, 0 headers) in 0.037 sec: 1 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2018-04-26 20:37:17.924
+!MESSAGE Executed Webtalk command
+!SESSION 2018-04-28 08:36:06.794 -----------------------------------------------
+eclipse.buildId=2017.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sdk
+
+!ENTRY org.eclipse.ui 2 0 2018-04-28 08:36:14.660
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-04-28 08:36:14.662
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2018-04-28 08:36:15.328
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-04-28 08:36:15.329
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:22.851
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:22.856
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:22.863
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:22.869
+!MESSAGE XSCT Command: [setws H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sdk], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:24.107
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:24.111
+!MESSAGE XSCT command with result: [setws H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sdk], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:24.129
+!MESSAGE XSCT Command: [::hsi::utils::openhw H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sdk/System_wrapper_hw_platform_0/system.hdf], Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:27.271
+!MESSAGE XSCT command with result: [::hsi::utils::openhw H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sdk/System_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:27.275
+!MESSAGE XSCT Command: [::hsi::utils::openhw H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sdk/system_axo_axi_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-04-28 08:36:28.209
+!MESSAGE XSCT command with result: [::hsi::utils::openhw H:/dev/CSASA/bch_fpga_2/bch_fpga_2.sdk/system_axo_axi_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main

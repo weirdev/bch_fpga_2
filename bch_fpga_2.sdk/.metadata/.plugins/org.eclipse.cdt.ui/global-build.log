@@ -1048,3 +1048,314 @@ H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_desig
    return (char*)encodedwords;
           ^~~~~~~~~~~~~~~~~~~
 make: *** [src/ecclib.o] Error 1
+19:41:53 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:45:13: warning: statement has no effect [-Wunused-value]
+     newword << 8;
+     ~~~~~~~~^~~~
+In file included from H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/ecclib.h:15,
+                 from ../src/ecclib.cpp:1:
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ #define XST_FAILURE                     1L
+                                         ^
+../src/ecclib.cpp:88:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ #define XST_FAILURE                     1L
+                                         ^
+../src/ecclib.cpp:93:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ #define XST_FAILURE                     1L
+                                         ^
+../src/ecclib.cpp:102:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ #define XST_FAILURE                     1L
+                                         ^
+../src/ecclib.cpp:110:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ #define XST_FAILURE                     1L
+                                         ^
+../src/ecclib.cpp:117:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ #define XST_FAILURE                     1L
+                                         ^
+../src/ecclib.cpp:138:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ #define XST_FAILURE                     1L
+                                         ^
+../src/ecclib.cpp:145:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h:65:41: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ #define XST_FAILURE                     1L
+                                         ^
+../src/ecclib.cpp:152:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/ecclib.cpp:50:6: warning: unused variable 'select' [-Wunused-variable]
+   u8 select;
+      ^~~~~~
+../src/ecclib.cpp:52:6: warning: unused variable 'num_in' [-Wunused-variable]
+   u8 num_in;
+      ^~~~~~
+../src/ecclib.cpp:53:7: warning: unused variable 'dma_improvement' [-Wunused-variable]
+   int dma_improvement;
+       ^~~~~~~~~~~~~~~
+../src/ecclib.cpp:56:7: warning: unused variable 'software_cycles' [-Wunused-variable]
+   int software_cycles, interrupt_cycles;
+       ^~~~~~~~~~~~~~~
+../src/ecclib.cpp:56:24: warning: unused variable 'interrupt_cycles' [-Wunused-variable]
+   int software_cycles, interrupt_cycles;
+                        ^~~~~~~~~~~~~~~~
+../src/ecclib.cpp:79:16: warning: unused variable 'Channel' [-Wunused-variable]
+   unsigned int Channel = 0;
+                ^~~~~~~
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:258:33: error: invalid type argument of unary '*' (have 'u32 {aka long unsigned int}')
+    *((u32)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+                                 ^
+../src/ecclib.cpp:261:42: error: invalid type argument of unary '*' (have 'u32 {aka long unsigned int}')
+   while (*((u32)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                          ^
+../src/ecclib.cpp:268:33: error: invalid type argument of unary '*' (have 'u32 {aka long unsigned int}')
+   *((u32)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+                                 ^
+../src/ecclib.cpp:271:33: error: invalid type argument of unary '*' (have 'u32 {aka long unsigned int}')
+   *((u32)(ANDXOR_AXI_BASEADDR+3)) = 1;
+                                 ^
+../src/ecclib.cpp:273:42: error: invalid type argument of unary '*' (have 'u32 {aka long unsigned int}')
+   while (*((u32)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                          ^
+../src/ecclib.cpp:276:50: error: invalid type argument of unary '*' (have 'u32 {aka long unsigned int}')
+    encodedwords[i] = *((u32)(BRAM_ENCODED_ADDR+i));
+                                                  ^
+make: *** [src/ecclib.o] Error 1
+19:44:02 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:45:13: warning: statement has no effect [-Wunused-value]
+     newword << 8;
+     ~~~~~~~~^~~~
+../src/ecclib.cpp:189:3: error: 'CntValue1' was not declared in this scope
+   CntValue1 = XScuTimer_GetCounterValue(TimerInstancePtr);
+   ^~~~~~~~~
+In file included from H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xscutimer.h:117:0,
+                 from ../src/ecclib.h:16,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp:189:41: error: 'TimerInstancePtr' was not declared in this scope
+   CntValue1 = XScuTimer_GetCounterValue(TimerInstancePtr);
+                                         ^
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xscutimer_hw.h:258:12: note: in definition of macro 'XScuTimer_ReadReg'
+  Xil_In32((BaseAddr) + (RegOffset))
+            ^~~~~~~~
+../src/ecclib.cpp:189:15: note: in expansion of macro 'XScuTimer_GetCounterValue'
+   CntValue1 = XScuTimer_GetCounterValue(TimerInstancePtr);
+               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:50:6: warning: unused variable 'select' [-Wunused-variable]
+   u8 select;
+      ^~~~~~
+../src/ecclib.cpp:52:6: warning: unused variable 'num_in' [-Wunused-variable]
+   u8 num_in;
+      ^~~~~~
+../src/ecclib.cpp:53:7: warning: unused variable 'dma_improvement' [-Wunused-variable]
+   int dma_improvement;
+       ^~~~~~~~~~~~~~~
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:262:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp:274:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+make: *** [src/ecclib.o] Error 1
+19:44:17 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:45:13: warning: statement has no effect [-Wunused-value]
+     newword << 8;
+     ~~~~~~~~^~~~
+../src/ecclib.cpp:50:6: warning: unused variable 'select' [-Wunused-variable]
+   u8 select;
+      ^~~~~~
+../src/ecclib.cpp:52:6: warning: unused variable 'num_in' [-Wunused-variable]
+   u8 num_in;
+      ^~~~~~
+../src/ecclib.cpp:53:7: warning: unused variable 'dma_improvement' [-Wunused-variable]
+   int dma_improvement;
+       ^~~~~~~~~~~~~~~
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:262:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp:274:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:183:20: warning: 'num' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   for (mpos=0; mpos<num; mpos++) {
+                ~~~~^~~~
+../src/ecclib.cpp:185:17: warning: 'destination' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    *(destination+mpos) = *(source+mpos);
+     ~~~~~~~~~~~~^~~~~~
+../src/ecclib.cpp:185:34: warning: 'source' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    *(destination+mpos) = *(source+mpos);
+                           ~~~~~~~^~~~~~
+'Finished building: ../src/ecclib.cpp'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bch_accel.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/lib -o "bch_accel.elf"  ./src/BinaryMatrix.o ./src/GFMatrix.o ./src/GaloisField.o ./src/ecclib.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/ecclib.o: In function `EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char, std::allocator<unsigned char> >&)':
+H:\dev\CSASA\bch_fpga_2\bch_fpga_2.sdk\bch_accel\Debug/../src/ecclib.cpp:249: undefined reference to `EccLib::BCH::Error'
+H:\dev\CSASA\bch_fpga_2\bch_fpga_2.sdk\bch_accel\Debug/../src/ecclib.cpp:249: undefined reference to `EccLib::BCH::Error'
+H:\dev\CSASA\bch_fpga_2\bch_fpga_2.sdk\bch_accel\Debug/../src/ecclib.cpp:250: undefined reference to `EccLib::BCH::Done'
+H:\dev\CSASA\bch_fpga_2\bch_fpga_2.sdk\bch_accel\Debug/../src/ecclib.cpp:250: undefined reference to `EccLib::BCH::Done'
+./src/ecclib.o: In function `EccLib::BCH::DmaDoneHandler(unsigned int, XDmaPs_Cmd*, void*)':
+H:\dev\CSASA\bch_fpga_2\bch_fpga_2.sdk\bch_accel\Debug/../src/ecclib.cpp:326: undefined reference to `EccLib::BCH::Done'
+H:\dev\CSASA\bch_fpga_2\bch_fpga_2.sdk\bch_accel\Debug/../src/ecclib.cpp:326: undefined reference to `EccLib::BCH::Done'
+./src/ecclib.o: In function `EccLib::BCH::DmaFaultHandler(unsigned int, XDmaPs_Cmd*, void*)':
+H:\dev\CSASA\bch_fpga_2\bch_fpga_2.sdk\bch_accel\Debug/../src/ecclib.cpp:335: undefined reference to `EccLib::BCH::Error'
+H:\dev\CSASA\bch_fpga_2\bch_fpga_2.sdk\bch_accel\Debug/../src/ecclib.cpp:335: undefined reference to `EccLib::BCH::Error'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bch_accel.elf] Error 1
+19:44:45 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/BinaryMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BinaryMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/BinaryMatrix.d" -MT"src/BinaryMatrix.o" -o "src/BinaryMatrix.o" "../src/BinaryMatrix.cpp"
+'Finished building: ../src/BinaryMatrix.cpp'
+' '
+'Building file: ../src/GFMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GFMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/GFMatrix.d" -MT"src/GFMatrix.o" -o "src/GFMatrix.o" "../src/GFMatrix.cpp"
+'Finished building: ../src/GFMatrix.cpp'
+' '
+'Building file: ../src/GaloisField.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GaloisField.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/GaloisField.d" -MT"src/GaloisField.o" -o "src/GaloisField.o" "../src/GaloisField.cpp"
+'Finished building: ../src/GaloisField.cpp'
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:45:13: warning: statement has no effect [-Wunused-value]
+     newword << 8;
+     ~~~~~~~~^~~~
+../src/ecclib.cpp:249:3: error: 'Error' was not declared in this scope
+   Error = 0;
+   ^~~~~
+../src/ecclib.cpp:250:3: error: 'Done' was not declared in this scope
+   Done = 0;
+   ^~~~
+../src/ecclib.cpp:50:6: warning: unused variable 'select' [-Wunused-variable]
+   u8 select;
+      ^~~~~~
+../src/ecclib.cpp:52:6: warning: unused variable 'num_in' [-Wunused-variable]
+   u8 num_in;
+      ^~~~~~
+../src/ecclib.cpp:53:7: warning: unused variable 'dma_improvement' [-Wunused-variable]
+   int dma_improvement;
+       ^~~~~~~~~~~~~~~
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:262:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp:274:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp: In member function 'void EccLib::BCH::DmaDoneHandler(unsigned int, XDmaPs_Cmd*, void*)':
+../src/ecclib.cpp:326:5: error: 'Done' was not declared in this scope
+     Done = 1;
+     ^~~~
+../src/ecclib.cpp: In member function 'void EccLib::BCH::DmaFaultHandler(unsigned int, XDmaPs_Cmd*, void*)':
+../src/ecclib.cpp:335:3: error: 'Error' was not declared in this scope
+   Error = 1;
+   ^~~~~
+make: *** [src/ecclib.o] Error 1
+20:37:14 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:45:13: warning: statement has no effect [-Wunused-value]
+     newword << 8;
+     ~~~~~~~~^~~~
+../src/ecclib.cpp:50:6: warning: unused variable 'select' [-Wunused-variable]
+   u8 select;
+      ^~~~~~
+../src/ecclib.cpp:52:6: warning: unused variable 'num_in' [-Wunused-variable]
+   u8 num_in;
+      ^~~~~~
+../src/ecclib.cpp:53:7: warning: unused variable 'dma_improvement' [-Wunused-variable]
+   int dma_improvement;
+       ^~~~~~~~~~~~~~~
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:260:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp:272:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                                             ~~^~~~
+../src/ecclib.cpp: In member function 'void EccLib::BCH::DmaDoneHandler(unsigned int, XDmaPs_Cmd*, void*)':
+../src/ecclib.cpp:324:5: error: 'Done' was not declared in this scope
+     Done = 1;
+     ^~~~
+../src/ecclib.cpp: In member function 'void EccLib::BCH::DmaFaultHandler(unsigned int, XDmaPs_Cmd*, void*)':
+../src/ecclib.cpp:333:3: error: 'Error' was not declared in this scope
+   Error = 1;
+   ^~~~~
+make: *** [src/ecclib.o] Error 1

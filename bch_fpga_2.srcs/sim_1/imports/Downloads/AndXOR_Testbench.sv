@@ -88,7 +88,7 @@ module AndXOR_Testbench;
         end
         $display("done genmat");
         // Load test input (all 1's) into BRAM (2 words, only first 45 bits matter)
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001f8, 4, 32'hffff_ffff, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001f8, 4, 32'hf0ff_ffff, resp);
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001fc, 4, 32'hffff_ffff, resp);
         `waitForReady
         // Input IVCW length to AXI = {2 words vector len, 3f=63 bits in codeword}
@@ -111,7 +111,7 @@ module AndXOR_Testbench;
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000204, 4, encoded1, resp);
         #20;
         $display("8");
-        $display(encoded0 == 32'hffff_ffff);
+        $display(encoded0 == 32'hf0ff_ffff);
         
        /*
        // Read the current value of the counter, no change to Counter

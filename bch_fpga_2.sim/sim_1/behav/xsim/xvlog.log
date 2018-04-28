@@ -60,5 +60,3 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/dev/CSASA/bch_fpga_2/bch_f
 INFO: [VRFC 10-311] analyzing module bd_470a_wsw_0
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "H:/dev/CSASA/bch_fpga_2/bch_fpga_2.ip_user_files/bd/system_axo_axi/ip/system_axo_axi_axi_smc_1/bd_0/ip/ip_6/sim/bd_470a_bsw_0.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bd_470a_bsw_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "H:/dev/CSASA/bch_fpga_2/bch_fpga_2.ip_user_files/bd/system_axo_axi/ipshared/f4ed/hdl/ANDXOR_v1_0_S00_AXI.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ANDXOR_v1_0_S00_AXI
