@@ -1359,3 +1359,1481 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=co
    Error = 1;
    ^~~~~
 make: *** [src/ecclib.o] Error 1
+14:54:02 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_4/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_4/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+14:54:50 **** Clean-only build of configuration Debug for project bch_accel ****
+make clean 
+rm -rf  ./src/main.d  ./src/BinaryMatrix.o ./src/GFMatrix.o ./src/GaloisField.o ./src/ecclib.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/BinaryMatrix.d ./src/GFMatrix.d ./src/GaloisField.d ./src/ecclib.d  bch_accel.elf.size  bch_accel.elf
+' '
+14:54:51 **** Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/BinaryMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BinaryMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/BinaryMatrix.d" -MT"src/BinaryMatrix.o" -o "src/BinaryMatrix.o" "../src/BinaryMatrix.cpp"
+In file included from ../src/BinaryMatrix.h:6:0,
+                 from ../src/BinaryMatrix.cpp:1:
+../src/ecclib.h:61:23: error: 'XScuGic' has not been declared
+   int SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr);
+                       ^~~~~~~
+../src/ecclib.h:61:40: error: 'XDmaPs' has not been declared
+   int SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr);
+                                        ^~~~~~
+../src/ecclib.h:63:9: error: 'XDmaPs_Cmd' has not been declared
+         XDmaPs_Cmd *DmaCmd,
+         ^~~~~~~~~~
+../src/ecclib.h:66:10: error: 'XDmaPs_Cmd' has not been declared
+          XDmaPs_Cmd *DmaCmd,
+          ^~~~~~~~~~
+../src/ecclib.h:70:3: error: 'XUartPs' does not name a type
+   XUartPs Uart_PS;  /* Instance of the UART Device */
+   ^~~~~~~
+../src/ecclib.h:72:3: error: 'XScuTimer' does not name a type
+   XScuTimer Timer;  /* Cortex A9 SCU Private Timer Instance */
+   ^~~~~~~~~
+../src/ecclib.h:73:3: error: 'XDmaPs' does not name a type
+   XDmaPs Dma;    /* PS DMA */
+   ^~~~~~
+../src/ecclib.h:74:3: error: 'XScuGic' does not name a type
+   XScuGic Gic;   /* PS GIC */
+   ^~~~~~~
+make: *** [src/BinaryMatrix.o] Error 1
+14:54:53 **** Build of configuration Debug for project HelloWorld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "HelloWorld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HelloWorld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size HelloWorld.elf  |tee "HelloWorld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19384	   1148	  22568	  43100	   a85c	HelloWorld.elf
+'Finished building: HelloWorld.elf.size'
+' '
+14:54:55 **** Build of configuration Debug for project BRAM_DMA_TEST ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/dma_test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+'Finished building: ../src/dma_test.c'
+' '
+'Building target: BRAM_DMA_TEST.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "BRAM_DMA_TEST.elf"  ./src/dma_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: BRAM_DMA_TEST.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size BRAM_DMA_TEST.elf  |tee "BRAM_DMA_TEST.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40452	   2764	  25160	  68376	  10b18	BRAM_DMA_TEST.elf
+'Finished building: BRAM_DMA_TEST.elf.size'
+' '
+14:54:56 **** Build of configuration Debug for project x_bch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:59:22 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/BinaryMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BinaryMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/BinaryMatrix.d" -MT"src/BinaryMatrix.o" -o "src/BinaryMatrix.o" "../src/BinaryMatrix.cpp"
+In file included from ../src/BinaryMatrix.h:6:0,
+                 from ../src/BinaryMatrix.cpp:1:
+../src/ecclib.h:7:20: fatal error: vector.h: No such file or directory
+ #include "vector.h"
+                    ^
+compilation terminated.
+make: *** [src/BinaryMatrix.o] Error 1
+14:59:37 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/BinaryMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BinaryMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/BinaryMatrix.d" -MT"src/BinaryMatrix.o" -o "src/BinaryMatrix.o" "../src/BinaryMatrix.cpp"
+In file included from ../src/BinaryMatrix.h:6:0,
+                 from ../src/BinaryMatrix.cpp:1:
+../src/ecclib.h:47:8: error: 'string' in namespace 'std' does not name a type
+   std::string GFPolynomialToStr(std::vector<unsigned char*> p);
+        ^~~~~~
+../src/ecclib.h:61:23: error: 'XScuGic' has not been declared
+   int SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr);
+                       ^~~~~~~
+../src/ecclib.h:61:40: error: 'XDmaPs' has not been declared
+   int SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr);
+                                        ^~~~~~
+../src/ecclib.h:63:9: error: 'XDmaPs_Cmd' has not been declared
+         XDmaPs_Cmd *DmaCmd,
+         ^~~~~~~~~~
+../src/ecclib.h:66:10: error: 'XDmaPs_Cmd' has not been declared
+          XDmaPs_Cmd *DmaCmd,
+          ^~~~~~~~~~
+../src/ecclib.h:70:3: error: 'XUartPs' does not name a type
+   XUartPs Uart_PS;  /* Instance of the UART Device */
+   ^~~~~~~
+../src/ecclib.h:72:3: error: 'XScuTimer' does not name a type
+   XScuTimer Timer;  /* Cortex A9 SCU Private Timer Instance */
+   ^~~~~~~~~
+../src/ecclib.h:73:3: error: 'XDmaPs' does not name a type
+   XDmaPs Dma;    /* PS DMA */
+   ^~~~~~
+../src/ecclib.h:74:3: error: 'XScuGic' does not name a type
+   XScuGic Gic;   /* PS GIC */
+   ^~~~~~~
+make: *** [src/BinaryMatrix.o] Error 1
+15:00:03 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/BinaryMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BinaryMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/BinaryMatrix.d" -MT"src/BinaryMatrix.o" -o "src/BinaryMatrix.o" "../src/BinaryMatrix.cpp"
+In file included from ../src/BinaryMatrix.h:6:0,
+                 from ../src/BinaryMatrix.cpp:1:
+../src/ecclib.h:61:23: error: 'XScuGic' has not been declared
+   int SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr);
+                       ^~~~~~~
+../src/ecclib.h:61:40: error: 'XDmaPs' has not been declared
+   int SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr);
+                                        ^~~~~~
+../src/ecclib.h:63:9: error: 'XDmaPs_Cmd' has not been declared
+         XDmaPs_Cmd *DmaCmd,
+         ^~~~~~~~~~
+../src/ecclib.h:66:10: error: 'XDmaPs_Cmd' has not been declared
+          XDmaPs_Cmd *DmaCmd,
+          ^~~~~~~~~~
+../src/ecclib.h:70:3: error: 'XUartPs' does not name a type
+   XUartPs Uart_PS;  /* Instance of the UART Device */
+   ^~~~~~~
+../src/ecclib.h:72:3: error: 'XScuTimer' does not name a type
+   XScuTimer Timer;  /* Cortex A9 SCU Private Timer Instance */
+   ^~~~~~~~~
+../src/ecclib.h:73:3: error: 'XDmaPs' does not name a type
+   XDmaPs Dma;    /* PS DMA */
+   ^~~~~~
+../src/ecclib.h:74:3: error: 'XScuGic' does not name a type
+   XScuGic Gic;   /* PS GIC */
+   ^~~~~~~
+make: *** [src/BinaryMatrix.o] Error 1
+15:00:23 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/BinaryMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BinaryMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/BinaryMatrix.d" -MT"src/BinaryMatrix.o" -o "src/BinaryMatrix.o" "../src/BinaryMatrix.cpp"
+'Finished building: ../src/BinaryMatrix.cpp'
+' '
+'Building file: ../src/GFMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GFMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/GFMatrix.d" -MT"src/GFMatrix.o" -o "src/GFMatrix.o" "../src/GFMatrix.cpp"
+'Finished building: ../src/GFMatrix.cpp'
+' '
+'Building file: ../src/GaloisField.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GaloisField.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/GaloisField.d" -MT"src/GaloisField.o" -o "src/GaloisField.o" "../src/GaloisField.cpp"
+'Finished building: ../src/GaloisField.cpp'
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:52:3: error: 'u32' was not declared in this scope
+   u32 * source, * destination;
+   ^~~
+../src/ecclib.cpp:52:9: error: 'source' was not declared in this scope
+   u32 * source, * destination;
+         ^~~~~~
+../src/ecclib.cpp:52:19: error: 'destination' was not declared in this scope
+   u32 * source, * destination;
+                   ^~~~~~~~~~~
+../src/ecclib.cpp:54:27: error: 'print' was not declared in this scope
+   print("transferring\r\n");
+                           ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:69:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:69:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:72:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:72:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:79:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:79:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:82:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:84:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:87:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+../src/ecclib.cpp: At global scope:
+../src/ecclib.cpp:92:27: error: 'int EccLib::BCH::SetupIntrSystem' is not a static data member of 'class EccLib::BCH'
+  int BCH::SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr)
+                           ^~~~~~~
+../src/ecclib.cpp:92:27: error: 'XScuGic' was not declared in this scope
+../src/ecclib.cpp:92:36: error: 'GicPtr' was not declared in this scope
+  int BCH::SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr)
+                                    ^~~~~~
+../src/ecclib.cpp:92:44: error: 'XDmaPs' was not declared in this scope
+  int BCH::SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr)
+                                            ^~~~~~
+../src/ecclib.cpp:92:52: error: 'DmaPtr' was not declared in this scope
+  int BCH::SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr)
+                                                    ^~~~~~
+../src/ecclib.cpp:92:58: error: expression list treated as compound expression in initializer [-fpermissive]
+  int BCH::SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr)
+                                                          ^
+../src/ecclib.cpp:132:8: error: 'XDmaPs_Cmd' has not been declared
+        XDmaPs_Cmd *DmaCmd,
+        ^~~~~~~~~~
+../src/ecclib.cpp:133:25: error: no 'void EccLib::BCH::DmaDoneHandler(unsigned int, int*, void*)' member function declared in class 'EccLib::BCH'
+        void *CallbackRef)
+                         ^
+../src/ecclib.cpp:140:9: error: 'XDmaPs_Cmd' has not been declared
+         XDmaPs_Cmd *DmaCmd,
+         ^~~~~~~~~~
+../src/ecclib.cpp:141:26: error: no 'void EccLib::BCH::DmaFaultHandler(unsigned int, int*, void*)' member function declared in class 'EccLib::BCH'
+         void *CallbackRef)
+                          ^
+make: *** [src/ecclib.o] Error 1
+15:00:55 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:52:3: error: 'u32' was not declared in this scope
+   u32 * source, * destination;
+   ^~~
+../src/ecclib.cpp:52:9: error: 'source' was not declared in this scope
+   u32 * source, * destination;
+         ^~~~~~
+../src/ecclib.cpp:52:19: error: 'destination' was not declared in this scope
+   u32 * source, * destination;
+                   ^~~~~~~~~~~
+../src/ecclib.cpp:54:27: error: 'print' was not declared in this scope
+   print("transferring\r\n");
+                           ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:69:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:69:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:72:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:72:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:79:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:79:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:82:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:84:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:87:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:02:48 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:52:3: error: 'u32' was not declared in this scope
+   u32 * source, * destination;
+   ^~~
+../src/ecclib.cpp:52:9: error: 'source' was not declared in this scope
+   u32 * source, * destination;
+         ^~~~~~
+../src/ecclib.cpp:52:19: error: 'destination' was not declared in this scope
+   u32 * source, * destination;
+                   ^~~~~~~~~~~
+../src/ecclib.cpp:58:26: error: 'print' was not declared in this scope
+   print("transferred\r\n");
+                          ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:68:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:68:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:71:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:71:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:78:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:78:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:81:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:83:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:86:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:03:12 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:52:3: error: 'u32' was not declared in this scope
+   u32 * source;
+   ^~~
+../src/ecclib.cpp:52:9: error: 'source' was not declared in this scope
+   u32 * source;
+         ^~~~~~
+../src/ecclib.cpp:53:9: error: 'destination' was not declared in this scope
+   u32 * destination;
+         ^~~~~~~~~~~
+../src/ecclib.cpp:59:26: error: 'print' was not declared in this scope
+   print("transferred\r\n");
+                          ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:69:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:69:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:72:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:72:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:79:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:79:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:82:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:84:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:87:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:03:48 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:53:3: error: 'u32' was not declared in this scope
+   u32 * destination;
+   ^~~
+../src/ecclib.cpp:53:9: error: 'destination' was not declared in this scope
+   u32 * destination;
+         ^~~~~~~~~~~
+../src/ecclib.cpp:59:26: error: 'print' was not declared in this scope
+   print("transferred\r\n");
+                          ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:69:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:69:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:72:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:72:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:79:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:79:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:82:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:84:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:87:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:03:56 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:59:26: error: 'print' was not declared in this scope
+   print("transferred\r\n");
+                          ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:69:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:69:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:72:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:72:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:79:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:79:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:82:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:84:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:87:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:05:35 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:54:26: error: invalid conversion from 'int*' to 'unsigned int*' [-fpermissive]
+   source = &gmwordarray[0];
+                          ^
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'unsigned int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+../src/ecclib.cpp:61:26: error: 'print' was not declared in this scope
+   print("transferred\r\n");
+                          ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:71:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:71:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:74:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:74:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:81:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:81:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:84:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:86:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:89:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:05:50 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'unsigned int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+../src/ecclib.cpp:61:26: error: 'print' was not declared in this scope
+   print("transferred\r\n");
+                          ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:71:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:71:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:74:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:74:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:81:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:81:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:84:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:86:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:89:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:06:05 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+../src/ecclib.cpp:61:26: error: 'print' was not declared in this scope
+   print("transferred\r\n");
+                          ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:71:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:71:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:74:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:74:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:81:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:81:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:84:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:86:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:89:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:07:08 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+../src/ecclib.cpp:61:26: error: 'print' was not declared in this scope
+   print("transferred\r\n");
+                          ^
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:71:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:71:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:74:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:74:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:81:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:81:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:84:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:86:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:89:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:07:17 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:69:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:69:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:72:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:72:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:79:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:79:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:82:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:84:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:87:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:07:38 **** Incremental Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:69:7: error: 'u32' was not declared in this scope
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+       ^~~
+../src/ecclib.cpp:69:11: error: expected primary-expression before ')' token
+    *((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+           ^
+../src/ecclib.cpp:72:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:72:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:79:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:79:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:82:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:84:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:87:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:07:39 **** Incremental Build of configuration Debug for project HelloWorld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:07:40 **** Incremental Build of configuration Debug for project BRAM_DMA_TEST ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+Command canceled
+15:09:10 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.cpp:68:19: error: cannot convert 'unsigned char*' to 'int*' in assignment
+   source = &data[0];
+                   ^
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:76:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:76:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:83:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:83:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:86:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:88:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:91:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:09:12 **** Build of configuration Debug for project BRAM_DMA_TEST ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:09:48 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:76:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:76:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:83:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:83:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:86:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:88:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:91:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:10:05 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:76:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:76:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:83:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:83:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:86:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:88:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:91:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:16:31 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/BinaryMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BinaryMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/BinaryMatrix.d" -MT"src/BinaryMatrix.o" -o "src/BinaryMatrix.o" "../src/BinaryMatrix.cpp"
+'Finished building: ../src/BinaryMatrix.cpp'
+' '
+'Building file: ../src/GFMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GFMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/GFMatrix.d" -MT"src/GFMatrix.o" -o "src/GFMatrix.o" "../src/GFMatrix.cpp"
+'Finished building: ../src/GFMatrix.cpp'
+' '
+'Building file: ../src/GaloisField.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GaloisField.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/GaloisField.d" -MT"src/GaloisField.o" -o "src/GaloisField.o" "../src/GaloisField.cpp"
+'Finished building: ../src/GaloisField.cpp'
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+0x1F8 //504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:76:13: error: 'u32' was not declared in this scope
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+             ^~~
+../src/ecclib.cpp:76:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:83:6: error: 'u32' was not declared in this scope
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+      ^~~
+../src/ecclib.cpp:83:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+          ^
+../src/ecclib.cpp:86:10: error: expected primary-expression before ')' token
+   *((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+          ^
+../src/ecclib.cpp:88:17: error: expected primary-expression before ')' token
+   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+                 ^
+../src/ecclib.cpp:91:29: error: expected primary-expression before ')' token
+    encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+                             ^
+make: *** [src/ecclib.o] Error 1
+15:18:29 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+0x1F8 //504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:75:49: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   int * axireadyvalidaddr = ANDXOR_AXI_BASEADDR + 3;
+                                                  
+../src/ecclib.cpp:77:35: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while ((*axireadyvalidaddr) & 1 != 1) {}
+                                 ~~^~~~
+../src/ecclib.cpp:83:37: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   destination = ANDXOR_AXI_BASEADDR + 1;
+                                      
+../src/ecclib.cpp:86:37: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   destination = ANDXOR_AXI_BASEADDR + 2;
+                                      
+../src/ecclib.cpp:94:35: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   while ((*axireadyvalidaddr) & 1 != 1) {}
+                                 ~~^~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.h:20:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_ENCODED_ADDR BRAM_TOENCODE_ADDR+8
+                                              
+../src/ecclib.cpp:96:12: note: in expansion of macro 'BRAM_ENCODED_ADDR'
+   source = BRAM_ENCODED_ADDR;
+            ^~~~~~~~~~~~~~~~~
+make: *** [src/ecclib.o] Error 1
+15:18:52 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+0x1F8 //504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:75:49: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   int * axireadyvalidaddr = ANDXOR_AXI_BASEADDR + 3;
+                                                  
+../src/ecclib.cpp:83:37: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   destination = ANDXOR_AXI_BASEADDR + 1;
+                                      
+../src/ecclib.cpp:86:37: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   destination = ANDXOR_AXI_BASEADDR + 2;
+                                      
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.h:20:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_ENCODED_ADDR BRAM_TOENCODE_ADDR+8
+                                              
+../src/ecclib.cpp:96:12: note: in expansion of macro 'BRAM_ENCODED_ADDR'
+   source = BRAM_ENCODED_ADDR;
+            ^~~~~~~~~~~~~~~~~
+make: *** [src/ecclib.o] Error 1
+15:19:17 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+0x1F8 //504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:75:54: error: invalid conversion from 'int' to 'int*' [-fpermissive]
+   int * axireadyvalidaddr = (int)ANDXOR_AXI_BASEADDR + 3;
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../src/ecclib.cpp:83:37: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   destination = ANDXOR_AXI_BASEADDR + 1;
+                                      
+../src/ecclib.cpp:86:37: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   destination = ANDXOR_AXI_BASEADDR + 2;
+                                      
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.h:20:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_ENCODED_ADDR BRAM_TOENCODE_ADDR+8
+                                              
+../src/ecclib.cpp:96:12: note: in expansion of macro 'BRAM_ENCODED_ADDR'
+   source = BRAM_ENCODED_ADDR;
+            ^~~~~~~~~~~~~~~~~
+make: *** [src/ecclib.o] Error 1
+15:19:26 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+0x1F8 //504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:83:37: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   destination = ANDXOR_AXI_BASEADDR + 1;
+                                      
+../src/ecclib.cpp:86:37: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+   destination = ANDXOR_AXI_BASEADDR + 2;
+                                      
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.h:20:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_ENCODED_ADDR BRAM_TOENCODE_ADDR+8
+                                              
+../src/ecclib.cpp:96:12: note: in expansion of macro 'BRAM_ENCODED_ADDR'
+   source = BRAM_ENCODED_ADDR;
+            ^~~~~~~~~~~~~~~~~
+make: *** [src/ecclib.o] Error 1
+15:19:42 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+0x1F8 //504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.h:20:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_ENCODED_ADDR BRAM_TOENCODE_ADDR+8
+                                              
+../src/ecclib.cpp:96:12: note: in expansion of macro 'BRAM_ENCODED_ADDR'
+   source = BRAM_ENCODED_ADDR;
+            ^~~~~~~~~~~~~~~~~
+make: *** [src/ecclib.o] Error 1
+15:19:48 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/BinaryMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BinaryMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/BinaryMatrix.d" -MT"src/BinaryMatrix.o" -o "src/BinaryMatrix.o" "../src/BinaryMatrix.cpp"
+'Finished building: ../src/BinaryMatrix.cpp'
+' '
+'Building file: ../src/GFMatrix.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GFMatrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/GFMatrix.d" -MT"src/GFMatrix.o" -o "src/GFMatrix.o" "../src/GFMatrix.cpp"
+'Finished building: ../src/GFMatrix.cpp'
+' '
+'Building file: ../src/GaloisField.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GaloisField.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/GaloisField.d" -MT"src/GaloisField.o" -o "src/GaloisField.o" "../src/GaloisField.cpp"
+'Finished building: ../src/GaloisField.cpp'
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+In file included from ../src/ecclib.h:8:0,
+                 from ../src/ecclib.cpp:1:
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+H:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:41:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR 0x40000000U
+                                             ^
+../src/ecclib.h:11:21: note: in expansion of macro 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR'
+ #define BRAM_MEMORY XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ecclib.cpp:55:17: note: in expansion of macro 'BRAM_MEMORY'
+   destination = BRAM_MEMORY;
+                 ^~~~~~~~~~~
+In file included from ../src/ecclib.cpp:1:0:
+../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
+../src/ecclib.h:19:39: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_TOENCODE_ADDR BRAM_MEMORY+504
+                                        
+../src/ecclib.cpp:69:17: note: in expansion of macro 'BRAM_TOENCODE_ADDR'
+   destination = BRAM_TOENCODE_ADDR;
+                 ^~~~~~~~~~~~~~~~~~
+../src/ecclib.h:20:45: error: invalid conversion from 'unsigned int' to 'int*' [-fpermissive]
+ #define BRAM_ENCODED_ADDR BRAM_TOENCODE_ADDR+8
+                                              
+../src/ecclib.cpp:96:12: note: in expansion of macro 'BRAM_ENCODED_ADDR'
+   source = BRAM_ENCODED_ADDR;
+            ^~~~~~~~~~~~~~~~~
+make: *** [src/ecclib.o] Error 1
+15:20:57 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
+../src/ecclib.cpp:57:20: warning: 'num' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   for (mpos=0; mpos<num; mpos++) {
+                ~~~~^~~~
+'Finished building: ../src/ecclib.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void test_BCH_Encode()':
+../src/main.cc:67:6: warning: unused variable 'encoded_bit_len' [-Wunused-variable]
+  int encoded_bit_len = 63;
+      ^~~~~~~~~~~~~~~
+../src/main.cc:68:6: warning: unused variable 't' [-Wunused-variable]
+  int t = 3;
+      ^
+../src/main.cc:69:6: warning: unused variable 'mbytes' [-Wunused-variable]
+  int mbytes = 1;
+      ^~~~~~
+../src/main.cc:78:7: warning: unused variable 'encoded' [-Wunused-variable]
+  auto encoded = bch.Encode(input_bytes);
+       ^~~~~~~
+../src/main.cc: In function 'void test_BCH_Decode(bool)':
+../src/main.cc:93:10: warning: variable 'buffer' set but not used [-Wunused-but-set-variable]
+   char * buffer = new char[500];
+          ^~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bch_accel.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/lib -o "bch_accel.elf"  ./src/BinaryMatrix.o ./src/GFMatrix.o ./src/GaloisField.o ./src/ecclib.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: bch_accel.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size bch_accel.elf  |tee "bch_accel.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 818518	   2836	  30036	 851390	  cfdbe	bch_accel.elf
+'Finished building: bch_accel.elf.size'
+' '
+16:44:32 **** Auto Build of configuration Debug for project bch_accel ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ecclib.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
+'Finished building: ../src/ecclib.cpp'
+' '
+'Building target: bch_accel.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/lib -o "bch_accel.elf"  ./src/BinaryMatrix.o ./src/GFMatrix.o ./src/GaloisField.o ./src/ecclib.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: bch_accel.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size bch_accel.elf  |tee "bch_accel.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 818518	   2836	  30036	 851390	  cfdbe	bch_accel.elf
+'Finished building: bch_accel.elf.size'
+' '

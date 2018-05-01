@@ -1,8 +1,8 @@
-23:08:06 **** Incremental Build of configuration Debug for project BRAM_DMA_TEST ****
+15:09:12 **** Build of configuration Debug for project BRAM_DMA_TEST ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
 
-23:08:06 Build Finished (took 241ms)
+15:09:12 Build Finished (took 293ms)
 

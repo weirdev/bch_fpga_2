@@ -1,42 +1,23 @@
-20:37:14 **** Auto Build of configuration Debug for project bch_accel ****
+16:44:32 **** Auto Build of configuration Debug for project bch_accel ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/ecclib.cpp'
 'Invoking: ARM v7 g++ compiler'
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ecclib.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ecclib.d" -MT"src/ecclib.o" -o "src/ecclib.o" "../src/ecclib.cpp"
-../src/ecclib.cpp: In member function 'void EccLib::BCH::LoadBRAM_w_GenMat(std::vector<unsigned char>&)':
-../src/ecclib.cpp:42:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i<generatormatrixfile.size(); i=i+4) {
-                 ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/ecclib.cpp:45:13: warning: statement has no effect [-Wunused-value]
-     newword << 8;
-     ~~~~~~~~^~~~
-../src/ecclib.cpp:50:6: warning: unused variable 'select' [-Wunused-variable]
-   u8 select;
-      ^~~~~~
-../src/ecclib.cpp:52:6: warning: unused variable 'num_in' [-Wunused-variable]
-   u8 num_in;
-      ^~~~~~
-../src/ecclib.cpp:53:7: warning: unused variable 'dma_improvement' [-Wunused-variable]
-   int dma_improvement;
-       ^~~~~~~~~~~~~~~
-../src/ecclib.cpp: In member function 'unsigned char* EccLib::BCH::Encode(unsigned char*)':
-../src/ecclib.cpp:260:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
-   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
-                                             ~~^~~~
-../src/ecclib.cpp:272:47: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
-   while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
-                                             ~~^~~~
-../src/ecclib.cpp: In member function 'void EccLib::BCH::DmaDoneHandler(unsigned int, XDmaPs_Cmd*, void*)':
-../src/ecclib.cpp:324:5: error: 'Done' was not declared in this scope
-     Done = 1;
-     ^~~~
-../src/ecclib.cpp: In member function 'void EccLib::BCH::DmaFaultHandler(unsigned int, XDmaPs_Cmd*, void*)':
-../src/ecclib.cpp:333:3: error: 'Error' was not declared in this scope
-   Error = 1;
-   ^~~~~
-make: *** [src/ecclib.o] Error 1
+'Finished building: ../src/ecclib.cpp'
+' '
+'Building target: bch_accel.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/dev/CSASA/vivaldo_starter/bram_designed_memory_speedtested_working/bram_designed_memory_speedtested_working.sdk/standalone_bsp_0/ps7_cortexa9_0/lib -o "bch_accel.elf"  ./src/BinaryMatrix.o ./src/GFMatrix.o ./src/GaloisField.o ./src/ecclib.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: bch_accel.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size bch_accel.elf  |tee "bch_accel.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 818518	   2836	  30036	 851390	  cfdbe	bch_accel.elf
+'Finished building: bch_accel.elf.size'
+' '
 
-20:37:15 Build Finished (took 1s.57ms)
+16:44:35 Build Finished (took 3s.711ms)
 

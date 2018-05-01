@@ -38,299 +38,67 @@ namespace EccLib
 
 	void BCH::LoadBRAM_w_GenMat(std::vector<unsigned char> &generatormatrixfile)
 	{
-		int * gmwordarray = new int[generatormatrixfile.size() / 4];
-		for (int i=0; i<generatormatrixfile.size(); i=i+4) {
+		int num = generatormatrixfile.size() / 4;
+		int * gmwordarray = new int[num];
+		for (unsigned int i=0; i<generatormatrixfile.size(); i=i+4) {
 			int newword = 0;
 			for (int j=0; j<4; j++) {
-				newword << 8;
+				newword <<= 8;
 				newword |= generatormatrixfile[i+j];
 			}
 			gmwordarray[i/4] = newword;
 		}
-		u8 select;
-		int num;
-		u8 num_in;
-		int dma_improvement;
 
-		u32 * source, * destination;
-		/*
-		int software_cycles, interrupt_cycles;
-		int test_done = 0;
 
-		// UART related definitions
-		int Status;
-		XUartPs_Config *Config;
-
-		// PS Timer related definitions
-		volatile u32 CntValue1;
-		XScuTimer_Config *ConfigPtr;
-		XScuTimer *TimerInstancePtr = &Timer;
-
-		// PS DMA related definitions
-		XDmaPs_Config *DmaCfg;
-		// BM: What is so special about these particular choices?
-		XDmaPs_Cmd DmaCmdb = XDmaPs_Cmd();
-		DmaCmdb.ChanCtrl = XDmaPs_ChanCtrl();
-		DmaCmdb.ChanCtrl.SrcBurstSize = 4;
-		DmaCmdb.ChanCtrl.SrcBurstLen = 4;
-		DmaCmdb.ChanCtrl.SrcInc = 1;	// increment source address
-		DmaCmdb.ChanCtrl.DstBurstSize = 4;
-		DmaCmdb.ChanCtrl.DstBurstLen = 4;
-		DmaCmdb.ChanCtrl.DstInc = 1;		// increment destination address=
-		unsigned int Channel = 0;
-
-		// PS Interrupt related definitions
-		XScuGic_Config *GicConfig;
-
-		// Initialize UART
-		// Look up the configuration in the config table, then initialize it.
-		Config = XUartPs_LookupConfig(XPAR_XUARTPS_0_DEVICE_ID);
-		if (NULL == Config) {
-			return XST_FAILURE;
-		}
-
-		Status = XUartPs_CfgInitialize(&Uart_PS, Config, Config->BaseAddress);
-		if (Status != XST_SUCCESS) {
-			return XST_FAILURE;
-		}
-
-		// Initialize timer counter
-		ConfigPtr = XScuTimer_LookupConfig(TIMER_DEVICE_ID);
-
-		Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
-					 ConfigPtr->BaseAddr);
-		if (Status != XST_SUCCESS) {
-			return XST_FAILURE;
-		}
-
-		// Initialize GIC
-		GicConfig = XScuGic_LookupConfig(INTC_DEVICE_INT_ID);
-		if (NULL == GicConfig) {
-			xil_printf("XScuGic_LookupConfig(%d) failed\r\n",
-					INTC_DEVICE_INT_ID);
-			return XST_FAILURE;
-		}
-
-		Status = XScuGic_CfgInitialize(&Gic, GicConfig,
-						   GicConfig->CpuBaseAddress);
-		if (Status != XST_SUCCESS) {
-			xil_printf("XScuGic_CfgInitialize failed\r\n");
-			return XST_FAILURE;
-		}
-
-		// Set options for timer/counter 0
-		// Load the timer counter register.
-		XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
-
-		// Start the Scu Private Timer device.
-		XScuTimer_Start(TimerInstancePtr);
-
-		print("-- Simple DMA Design Example --\r\n");
-
-		// Get a snapshot of the timer counter value before it's started
-		CntValue1 = XScuTimer_GetCounterValue(TimerInstancePtr);
-
-		xil_printf("Above message printing took %d clock cycles\r\n", TIMER_LOAD_VALUE-CntValue1);
-
-		// Setup DMA Controller
-		DmaCfg = XDmaPs_LookupConfig(DMA0_ID);
-		if (!DmaCfg) {
-			xil_printf("Lookup DMAC %d failed\r\n", DMA0_ID);
-			return XST_FAILURE;
-		}
-
-		Status = XDmaPs_CfgInitialize(&Dma,DmaCfg,DmaCfg->BaseAddress);
-
-		if (Status) {
-			xil_printf("XDmaPs_CfgInitialize failed\r\n");
-			return XST_FAILURE;
-		}
-
-		// Setup Interrupt system here even we don't use it for the poll-DMA mode
-		// as required by the PS DMA driver
-		Status = SetupIntrSystem(&Gic, &Dma);
-		if (Status != XST_SUCCESS) {
-			return XST_FAILURE;
-		}
-
-	//	Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
-
-		test_done = 0;
-		// ...Awesome! you can flush the cache
-		// Following code is required only if Cache is enabled
-		//Xil_DCacheFlushRange((u32)&source, LENGTH);
-		//Xil_DCacheFlushRange((u32)&destination, LENGTH);
-
-		num = generatormatrixfile.size() / 4;
-		// Initialize src memory
-		print("initialize source memory\r\n");
-		print("initialized\r\n");
-
-		source = (u32 *)gmwordarray;
-		destination = (u32 *)(BRAM_MEMORY);
-
-		//if ((int)(destination+num-1) > BRAM_MEMORY_LAST_WORD) {
-
-		// Non-DMA mode
-		// reset timer
-		XScuTimer_RestartTimer(TimerInstancePtr);
-
-		// start moving data through the processor - no CDMA, no interrupt
-		// gives base consumed cycles
-		*/
+		int * source;
+		int * destination;
+		source = &gmwordarray[0];
+		destination = (int*)BRAM_MEMORY;
 		int mpos;
-		print("transferring\r\n");
 		for (mpos=0; mpos<num; mpos++) {
 			//xil_printf("transferring %d\r\n",i);
 			*(destination+mpos) = *(source+mpos);
 		}
-		print("transferred\r\n");
-
-		//CntValue1 = XScuTimer_GetCounterValue(TimerInstancePtr);
-
-
-		/*
-		xil_printf("Moving data through processor took %d clock cycles\r\n", TIMER_LOAD_VALUE-CntValue1);
-		software_cycles = TIMER_LOAD_VALUE-CntValue1;
-
-		// DMA in polling mode
-		//print("Starting transfer through DMA in poll mode\r\n");
-		DmaCmd.BD.SrcAddr = (u32)source;
-		DmaCmd.BD.DstAddr = (u32)destination;
-		DmaCmd.BD.Length = num * sizeof(int);
-
-		// setting up for interrupt driven DMA
-		// clear destination memory
-		for (i=0; i<num; i++)
-			*(destination+i) = 0;
-
-		print("Setting up interrupt system\r\n");
-		Status = SetupIntrSystem(&Gic, &Dma);
-		if (Status != XST_SUCCESS) {
-			return XST_FAILURE;
-		}
-
-		Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
-
-		XDmaPs_SetDoneHandler(&Dma,0,DmaDoneHandler,0);
-		Status = XDmaPs_Start(&Dma, Channel, &DmaCmd, 0);	// release DMA buffer as we are done
-
-		// reset timer
-		XScuTimer_RestartTimer(TimerInstancePtr);
-
-		// wait for DMA to finish
-		while ((Done==0) & (Error==0));
-		if (Error)
-			print("Error occurred during DMA transfer\r\n");
-
-		CntValue1 = XScuTimer_GetCounterValue(TimerInstancePtr);
-
-		xil_printf("Moving data through DMA in Interrupt mode took %d clock cycles\r\n", TIMER_LOAD_VALUE-CntValue1);
-		interrupt_cycles = TIMER_LOAD_VALUE-CntValue1;
-
-		print("Transfer complete\r\n");
-		// Disable the interrupt for the device
-		XScuGic_Disable(&Gic, XPAR_XDMAPS_0_DONE_INTR_0);
-
-		// double check that the transfer *actually* worked
-		for (i = 0; i < num; i++) {
-				if ( destination[i] != source[i]) {
-					xil_printf("Data match failed at = %d, source data = %d, destination data = %d\n\r",i,source[i],destination[i]);
-					print("-- Exiting main() --");
-					return XST_FAILURE;
-				}
-			}
-		print("Transfered data verified\r\n");
-		dma_improvement = software_cycles/interrupt_cycles;
-		xil_printf("Improvement using Interrupt DMA = %2d", dma_improvement);
-		xil_printf("x improvement \r\n");
-		xil_printf("------------------------------------------------------------------- \r\n\r\n");
-		*/
 	}
 
 	// TODO: Use redundant only generating matrix and return only redundant data
 	unsigned char* BCH::Encode(unsigned char* data)
 	{
+		int * source;
+		int * destination;
+		source = (int *)&data[0];
+		destination = (int*)BRAM_TOENCODE_ADDR;
 		// Write vector to encode to BRAM
 		for (int i=0; i<2; i++)
 		{
-			*((u32*)(BRAM_TOENCODE_ADDR+i)) = 0xffffffff;
+			*(destination+i) = *(source+i);
 		}
+		int * axireadyvalidaddr = (int*)ANDXOR_AXI_BASEADDR + 3;
 		// Wait for ready
-		while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+		while (((*axireadyvalidaddr) & 1) != 1) {}
 
 		// Write needed parameters
-		short ivlen_wrds = 2;
-		short cwlen_bits = 63;
-		int ivcwlen = (ivlen_wrds << 16) | cwlen_bits;
+		int ivlen_wrds = 2;
+		int cwlen_bits = 63;
 
-		*((u32*)(ANDXOR_AXI_BASEADDR+1)) = ivcwlen;
+		destination = (int*)ANDXOR_AXI_BASEADDR + 1;
+		*destination = ivlen_wrds;
+
+		destination = (int*)ANDXOR_AXI_BASEADDR + 2;
+		*destination = cwlen_bits;
+
+
 
 		// Set valid
-		*((u32*)(ANDXOR_AXI_BASEADDR+3)) = 1;
+		*(axireadyvalidaddr) = 1;
 		// Wait for ready
-		while (*((u32*)(ANDXOR_AXI_BASEADDR + 3))&1 != 1) {}
+		while (((*axireadyvalidaddr) & 1) != 1) {}
 		int * encodedwords = new int[2];
+		source = (int*)BRAM_ENCODED_ADDR;
 		for (int i=0; i<2; i++) {
-			encodedwords[i] = *((u32*)(BRAM_ENCODED_ADDR+i));
+			encodedwords[i] = *(source+1);
 		}
 		return (unsigned char*)encodedwords;
-	}
-
-	int BCH::SetupIntrSystem(XScuGic *GicPtr, XDmaPs *DmaPtr)
-	{
-		int Status;
-
-		Xil_ExceptionInit();
-
-		// Connect the interrupt controller interrupt handler to the hardware
-		// interrupt handling logic in the processor.
-		Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
-				     (Xil_ExceptionHandler)XScuGic_InterruptHandler,
-				     GicPtr);
-
-		// Connect a device driver handler that will be called when an interrupt
-		// for the device occurs, the device driver handler performs the specific
-		// interrupt processing for the device
-
-		// Connect the Fault ISR (Interrupt service routine)
-		Status = XScuGic_Connect(GicPtr,
-					 XPAR_XDMAPS_0_FAULT_INTR,
-					 (Xil_InterruptHandler)XDmaPs_FaultISR,
-					 (void *)DmaPtr);
-		if (Status != XST_SUCCESS)
-			return XST_FAILURE;
-
-		// Connect the Done ISR for channel 0 of DMA 0
-		Status = XScuGic_Connect(GicPtr,
-					 XPAR_XDMAPS_0_DONE_INTR_0,
-					 (Xil_InterruptHandler)XDmaPs_DoneISR_0,
-					 (void *)DmaPtr);
-
-		if (Status != XST_SUCCESS)
-			return XST_FAILURE;
-
-		// Enable the interrupt for the device
-		XScuGic_Enable(GicPtr, XPAR_XDMAPS_0_DONE_INTR_0);
-
-		return XST_SUCCESS;
-	}
-
-	void BCH::DmaDoneHandler(unsigned int Channel,
-			    XDmaPs_Cmd *DmaCmd,
-			    void *CallbackRef)
-	{
-		/* done handler */
-	  	Done = 1;
-	}
-
-	void BCH::DmaFaultHandler(unsigned int Channel,
-			     XDmaPs_Cmd *DmaCmd,
-			     void *CallbackRef)
-	{
-		/* fault handler */
-
-		Error = 1;
 	}
 
 	unsigned char* BCH::Decode(unsigned char* data)
