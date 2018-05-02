@@ -13,8 +13,8 @@ int main()
 	//printf("Contents: %s\r\n", &c[0]);
 	//cleanup_platform();
 
-	test_BCH_Encode();
-	//test_BCH_Decode(true);
+	//test_BCH_Encode();
+	test_BCH_Decode(true);
 	int s;
 	std::cin >> s;
     return 0;
@@ -27,8 +27,8 @@ void test_BCH_Encode() {
 
 	//std::istream_iterator<char> filein(std::cin);
 	//std::istream_iterator<char> eof;
-	//init_platform();
-	char * buffer = new char[600];
+	init_platform();
+	char * buffer = new char[500];
 	/*while (true) {
 		std::cin.get(buffer, 6);
 		std::cin.get();
@@ -40,11 +40,11 @@ void test_BCH_Encode() {
 */
 	std::cout << "Enter Generator Matrix:" << std::endl;
 
-	std::cin.get(buffer, 504);
+	std::cin.get(buffer, 386);
 	std::cin.get();
 	std::cin.get();
 	std::vector<unsigned char> genmat;
-	for (int i=0; i<504; i++)
+	for (int i=0; i<386; i++)
 	{
 		genmat.push_back(buffer[i]);
 	}
@@ -61,7 +61,7 @@ void test_BCH_Encode() {
 		parchk.push_back(buffer[i]);
 	}
 	//std::vector<unsigned char> parchk(std::istream_iterator<char>{std::cin}, std::istream_iterator<char>{});
-	//cleanup_platform();
+	cleanup_platform();
 	EccLib::BCH bch = EccLib::BCH(genmat, parchk, 6, 3);
 	int input_bit_len = 45;
 	int encoded_bit_len = 63;
