@@ -27,8 +27,7 @@ void test_BCH_Encode() {
 
 	//std::istream_iterator<char> filein(std::cin);
 	//std::istream_iterator<char> eof;
-	init_platform();
-	char * buffer = new char[500];
+	char * buffer = new char[700];
 	/*while (true) {
 		std::cin.get(buffer, 6);
 		std::cin.get();
@@ -40,11 +39,11 @@ void test_BCH_Encode() {
 */
 	std::cout << "Enter Generator Matrix:" << std::endl;
 
-	std::cin.get(buffer, 386);
+	std::cin.get(buffer, 504);
 	std::cin.get();
 	std::cin.get();
 	std::vector<unsigned char> genmat;
-	for (int i=0; i<386; i++)
+	for (int i=0; i<504; i++)
 	{
 		genmat.push_back(buffer[i]);
 	}
@@ -88,27 +87,31 @@ void test_BCH_Decode(bool small)
 	int mbytes;
 	//if (small)
 	//{
-	init_platform();
+		//init_platform();
 		std::cout << "Enter Generator Matrix:" << std::endl;
-		char * buffer = new char[500];
 		std::vector<unsigned char> genmat;
-		for (int i=0; i<386; i++)
+		int gensize = 504;
+		for (int i=0; i<gensize; i++)
 		{
 			genmat.push_back(std::cin.get());
+			//std::cout << std::cin.get() << std::endl;
+			//std::cout << i << std::endl;
 		}
 		//std::vector<unsigned char> genmat(std::istream_iterator<char>{std::cin}, std::istream_iterator<char>{});
-
+		for (int i=0; i<1024-gensize; i++) {
+			std::cin.get();
+		}
 		std::cout << "Enter Parity Check Matrix" << std::endl;
-		buffer = new char[500];
 		//std::cin.get(buffer, 395);
-		std::cin.get();
+		//std::cin.get();
 		std::vector<unsigned char> parchk;
-		for (int i=0; i<394; i++)
+		for (int j=0; j<394; j++)
 		{
 			parchk.push_back(std::cin.get());
 		}
+		std::cout << "par mat read" << std::endl;
 		//std::vector<unsigned char> parchk(std::istream_iterator<char>{std::cin}, std::istream_iterator<char>{});
-		cleanup_platform();
+		//cleanup_platform();
 		bch = new EccLib::BCH(genmat, parchk, 6, 3);
 		input_bit_len = 45;
 		encoded_bit_len = 63;

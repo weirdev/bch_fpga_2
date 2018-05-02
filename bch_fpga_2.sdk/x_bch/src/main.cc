@@ -13,8 +13,8 @@ int main()
 	//printf("Contents: %s\r\n", &c[0]);
 	//cleanup_platform();
 
-	test_BCH_Encode();
-	//test_BCH_Decode(true);
+	//test_BCH_Encode();
+	test_BCH_Decode(true);
 	int s;
 	std::cin >> s;
     return 0;
