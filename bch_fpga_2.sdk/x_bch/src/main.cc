@@ -14,10 +14,118 @@ int main()
 	//cleanup_platform();
 
 	//test_BCH_Encode();
-	test_BCH_Decode(true);
+	//test_BCH_Decode(true);
+
+	// TIMER STUFF ***
+	// PS Timer related definitions
+	volatile u32 CntValue1;
+	XScuTimer_Config *ConfigPtr;
+	XScuTimer *TimerInstancePtr = &Timer;
+	int Status;
+
+	// Initialize timer counter
+	ConfigPtr = XScuTimer_LookupConfig(TIMER_DEVICE_ID);
+
+	Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+				 ConfigPtr->BaseAddr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	// Setup tests
+	EccLib::BCH* bch = get_BCH_Instance();
+
+	// Set options for timer/counter 0
+	// Load the timer counter register.
+	XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+
+	// Start the Scu Private Timer device.
+	XScuTimer_Start(TimerInstancePtr);
+
+	XScuTimer_RestartTimer(TimerInstancePtr);
+	// ***
+	// Do test here
+	bch_decode_timed(bch, 1);
+	// End tests
+	CntValue1 = XScuTimer_GetCounterValue(TimerInstancePtr);
+	std::cout << "Clock cycles used: " << TIMER_LOAD_VALUE-CntValue1 << std::endl;
+	// Exit code
 	int s;
 	std::cin >> s;
     return 0;
+}
+
+EccLib::BCH* get_BCH_Instance() {
+	std::cout << "Enter Generator Matrix:" << std::endl;
+	std::vector<unsigned char> genmat;
+	int gensize = 386;
+	for (int i=0; i<gensize; i++)
+	{
+		genmat.push_back(std::cin.get());
+	}
+	for (int i=0; i<1024-gensize; i++) {
+		std::cin.get();
+	}
+	std::cout << "Enter Parity Check Matrix" << std::endl;
+	std::vector<unsigned char> parchk;
+	for (int j=0; j<394; j++)
+	{
+		parchk.push_back(std::cin.get());
+	}
+	std::cout << "par mat read" << std::endl;
+	return new EccLib::BCH(genmat, parchk, 6, 3);
+}
+
+void bch_decode_timed(EccLib::BCH* bch, int iterations)
+{
+	int input_bit_len;
+	int encoded_bit_len;
+	input_bit_len = 45;
+	encoded_bit_len = 63;
+	int input_byte_len = (int)input_bit_len / 8;
+	if (input_bit_len % 8 != 0)
+	{
+		input_byte_len++;
+	}
+	int encoded_byte_len = (int)encoded_bit_len / 8;
+	if (encoded_bit_len % 8 != 0)
+	{
+		encoded_byte_len++;
+	}
+	for (int i=0; i<iterations; i++)
+	{
+		std::vector<unsigned char> ibvector = randomdata(input_byte_len);
+		unsigned char* input_bytes = &ibvector[0];
+		unsigned char* encoded = bch->Encode(input_bytes);
+		/*
+		unsigned char* errored = standardnoise(encoded, encoded_byte_len);
+		unsigned char* decoded = bch->Decode(errored);
+		bool eq = arraysequal(encoded, decoded, encoded_byte_len);
+		if (!eq) {
+			std::cout << "Errors not corrected." << std::endl;
+		}
+		delete decoded;
+		delete input_bytes;
+		delete encoded;
+		delete errored;
+		*/
+		std::cout << i << std::endl;
+	}
+}
+
+bool arraysequal(unsigned char* v1, unsigned char* v2, unsigned int size)
+{
+	bool res = true;
+	for (unsigned int i=0; i < size; ++i)
+	{
+		if (v1[i] != v2[i])
+		{
+			res = false;
+		}
+	}
+	// Wait to return until we've looped through completely (instead of immediately on false),
+	// in order to preserve timing
+	return res;
 }
 
 void test_BCH_Encode() {
