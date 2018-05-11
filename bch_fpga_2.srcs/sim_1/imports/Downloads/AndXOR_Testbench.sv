@@ -111,49 +111,54 @@ module AndXOR_Testbench;
         AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000204, 4, encoded1, resp);
         #20;
         $display("8");
-        $display(encoded0 == 32'hf0ff_ffff);
+	// Matrix is in systematic form, first word of product must equal first word of input.
+        assert(encoded0 == 32'hf0ff_ffff);
         
-       /*
-       // Read the current value of the counter, no change to Counter
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h43C00004,4,read_data,resp);
-        // expect something larger than 5
-        $display ("%t, running the testbench, data read from Counter was 32'h%x",$time, read_data);
-        if (read_data < 5) begin
-             $display("FAILED: expected data to be >= 5");
-             $stop;
-        end
-        last_read = read_data;
+        // Test zero input NO RESET
         
-        repeat(30) @(posedge tb_ACLK);
-        // Read the current value of the counter, no change to Counter
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h43C00004,4,read_data,resp);
-        // expect previous + 30
-        $display ("%t, running the testbench, data read from Counter was 32'h%x",$time, read_data);
-        if (read_data <= last_read) begin
-            $display("FAILED: expected data to be > %d", last_read);
-            $stop;
-        end
-        last_read = read_data;
+        repeat(5) @(posedge tb_ACLK);
 
-        // user counter reset
-        $display("User resets the counter to 0");
-        // Reset signal to 1, Counter reset to zero
-       AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00000,4, 32'h00000001, resp);
-       repeat(5) @(posedge tb_ACLK);
-       // Reset signal back to 0
-       AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00000,4, 32'h00000000, resp);
+        //AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.pre_load_mem_from_file(genmatfile, 32'h40000000, 386);
+        
+        // Read generator matrix file
+        fileid = $fopen("H:/dev/CSASA/ecc-lib/pyGF/63_45_matrix_memory", "rb");
+        //fileid = $fopen("C:/Users/Wesley/dev/ecc-lib/pyGF/63_45_matrix_memory", "rb");
+        temp = $fread(generatormatrix, fileid);
+        $display("1");
+        // Load generator matrix into BRAM (504) total bytes
+        for (i=0; i<504; i=i+4) begin
+            AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h4000_0000+i, 4, generatormatrix[i*8+:32], resp);
+            #10;
+            $display(i);
+        end
+        $display("done genmat");
+        // Load test input (all 1's) into BRAM (2 words, only first 45 bits matter)
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001f8, 4, 32'h0000_0000, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h400001fc, 4, 32'h0000_0000, resp);
+        `waitForReady
+        // Input IVCW length to AXI = {2 words vector len, 3f=63 bits in codeword}
+        $display("3b");
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00004, 8'h4, 2, resp);
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C00008, 8'h4, 63, resp);
+        $display("4");
+        // Write valid to slv_reg3
+        last_valid ^= 1;
+        $display("5");
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.write_data(32'h43C0000c, 8'h4, last_valid, resp);
+        #100
+        $display("6");
+        // Process and wait for completion
+        `waitForReady
+        $display("7");
+        // Read output
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000200, 4, encoded0, resp);
+        
+        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h40000204, 4, encoded1, resp);
+        #20;
+        $display("8");
+        // First word of output must match first word of input
+        assert(encoded0 == 32'h0000_0000);
        
-       repeat(5) @(posedge tb_ACLK);
-
-        // Read the current value of the counter, no change to Counter
-        AndXOR_Testbench.zynq_sys.system_axo_axi_i.processing_system7_0.inst.read_data(32'h43C00004,4,read_data,resp);
-        // expect something smaller
-        $display ("%t, running the testbench, data read from Counter was 32'h%x",$time, read_data);
-        if (read_data >= last_read) begin
-              $display("FAILED: expected data to be < %d", last_read);
-              $stop;
-        end
-        */
         $finish;
     end
 
